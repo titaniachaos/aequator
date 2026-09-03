@@ -10,3 +10,11 @@ updates:
     directory: /
     schedule:
       interval: monthly
+    ignore:
+      # TypeScript 7 is the native port, and its package no longer exports
+      # ./lib/tsc -- which is exactly what vue-tsc resolves in order to run the
+      # checker, so `vue-tsc --noEmit` cannot start at all. The 6.x line is the
+      # last JavaScript implementation and is what vue-tsc supports today.
+      # Remove this once vue-tsc can drive the native compiler.
+      - dependency-name: typescript
+        versions: ['>=7']
