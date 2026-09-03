@@ -1,7 +1,40 @@
 {
-  "$schemaNote": "Only media with consentStatus 'approved' may be rendered. 'pending' and 'internal-only' items must never reach HTML, client bundles, feeds, metadata, search indexes or public assets.",
-  "media": [],
+  "$schemaNote": "Only media with consentStatus 'approved' may be rendered. 'pending' and 'internal-only' items must never reach HTML, client bundles, feeds, metadata, search indexes or public assets. Entries are borrowed from the main site rather than copied: titaniachaos.com publishes the archive and the rights record at /media.json, and this file holds the index of what this project shows. A frame withdrawn there is withdrawn here, and there is one place to act on a withdrawal request rather than two.",
+  "media": [
+    {
+      "stableId": "banana-encore",
+      "type": "video_file",
+      "sourceUrl": "https://titaniachaos.com/images/media/banana-encore.mp4",
+      "posterUrl": "https://titaniachaos.com/images/media/banana-encore.webp",
+      "title": {
+        "de": "Banane aus dem Publikum",
+        "en": "The banana from the audience",
+        "bg": "Бананът от публиката"
+      },
+      "date": "2025-11",
+      "place": {
+        "de": "Wien",
+        "en": "Vienna",
+        "bg": "Виена"
+      },
+      "copyrightHolder": "Tatiana Petkova (Titania Chaos)",
+      "consentStatus": "approved",
+      "altText": {
+        "en": "Titania Chaos in a long coat outdoors, holding a banana handed up from the audience",
+        "de": "Titania Chaos im langen Mantel im Freien, mit einer Banane aus dem Publikum",
+        "bg": "Титания Хаос в дълго палто на открито държи банан, подаден от публиката"
+      },
+      "caption": {
+        "de": "Die Banane kommt aus dem Publikum, mitten im Auftritt mit der Äquatormassband. Wien, November 2025.",
+        "en": "The banana arrives from the audience, mid-performance with Äquatormassband. Vienna, November 2025.",
+        "bg": "Бананът идва от публиката, по време на представление с Äquatormassband. Виена, ноември 2025."
+      }
+    }
+  ],
   "tbd": [
-    "No media files, creators, copyright holders or consent records have been supplied. The Türkenschanzpark action is described as filmed, but no rights-cleared asset or public URL is available."
-  ]
+    "banana-encore has no per-frame creator: the main site records photographers as one rights line for the whole archive, not per image. copyrightHolder is taken from that line.",
+    "banana-encore is dated November 2025 and belongs to no recorded action, so it carries no eventId. Whether a November 2025 action should be recorded is unverified.",
+    "The four recorded actions have no media of their own. The Türkenschanzpark action is described as filmed, but no rights-cleared footage of it is published at https://titaniachaos.com/media.json"
+  ],
+  "rights": "© Tatiana Petkova (Titania Chaos). Photographs by Veliko Balabanov, Marine Hink, Heidi Holtl, Geo Kalev, Tanya Matskevich, Konstantin Oberlik, Tatiana Petkova, Marion Scholz and Laurent Ziegler. Recorded verbatim from https://titaniachaos.com/media.json"
 }

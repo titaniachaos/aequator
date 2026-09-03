@@ -67,14 +67,34 @@ Three rules are enforced by code rather than by care:
 The validator also pins the two verified dates (Türkenschanzpark 2025-10-30, Märzpark
 2026-03-04).
 
+## Media
+
+Frames are borrowed from the main site, not copied. `titaniachaos.com` publishes the
+archive and the rights record at [`/media.json`](https://titaniachaos.com/media.json),
+and `docs/data/media.json` holds the index of what this project shows — the origin URLs,
+the trilingual alt text and caption, and the consent status. Nothing lives in
+`docs/public`.
+
+That is the clown repository's arrangement, and the reason for it is withdrawal: a frame
+taken down on the main site is taken down here in the same act, and there is one place to
+honour that request rather than two.
+
+To add a frame, publish it on the main site first, then copy its record into
+`docs/data/media.json` with `consentStatus: 'approved'`. The validator requires a creator
+or a copyright holder, and alt text or a caption, before it will let one through.
+
 ## Open questions
 
 Recorded in the `tbd` arrays of the data files and on the pages themselves:
 
 - The exact day is not verified for two actions: Platz der Menschenrechte (September 2025)
   and the "Sucht & Menschsein" festival (March 2026). Both are month-precision.
-- No media, creators, copyright holders or consent records have been supplied — so the
-  journal and credits pages have nothing to show.
+- The four recorded actions still have no media of their own. Türkenschanzpark is described
+  as filmed, but no rights-cleared footage of it is published on the main site.
+- `banana-encore` is dated November 2025 and belongs to no recorded action, so it carries no
+  `eventId`. Whether a November 2025 action should be recorded is unverified.
+- Photographers are credited as one notice for the whole archive, not per frame, so there is
+  no per-image attribution.
 - No public verified source URLs exist yet for the project or any action.
 - The project's own start year and its current measured length are not recorded.
 - Learning and Journal are routed and translated but have no verified content.

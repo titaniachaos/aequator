@@ -1,14 +1,16 @@
 ---
 title: Journal
-description: Fortlaufende Notizen zum Äquatormaßband — in Vorbereitung.
+description: Fortlaufende Notizen und Bilder zum Äquatormaßband.
 ---
 
 # Journal
 
-Diese Seite ist angelegt, aber noch nicht mit Inhalt gefüllt.
+Bislang ist ein einziger freigegebener Beitrag erfasst.
 
-Für ein fortlaufendes Journal — Notizen, Beobachtungen und Bilder aus den Aktionen —
-liegt derzeit kein geprüfter und rechtlich freigegebener Quelltext vor. Bildmaterial
-wird erst veröffentlicht, wenn die Einwilligung als `approved` erfasst ist.
+<MediaFigure id="banana-encore" lang="de" />
 
-**Status: TBD.**
+## Offen
+
+Weitere Notizen, Beobachtungen und Bilder aus den Aktionen liegen noch nicht in
+geprüfter und rechtlich freigegebener Form vor. Bildmaterial erscheint hier erst, wenn
+die Einwilligung als `approved` erfasst ist. **TBD.**

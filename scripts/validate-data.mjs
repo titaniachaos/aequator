@@ -92,6 +92,8 @@ const sourceLink = z.object({
 const envelope = (key, item) =>
   z.object({
     $schemaNote: z.string().optional(),
+    // The rights line, recorded verbatim from the main site's published index.
+    rights: z.string().optional(),
     translationReview: z.record(z.enum(LANGUAGES), z.enum(['verified', 'draft'])).optional(),
     tbd: z.array(z.string()).optional(),
     [key]: item
