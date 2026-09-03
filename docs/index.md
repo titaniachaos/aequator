@@ -1,14 +1,35 @@
-# Welcome to Aequator
+---
+title: Äquatormaßband × Titania Chaos
+titleTemplate: false
+description: Participatory textile art and peace project by Bianca Trappl, accompanied since 2025 by Titania Chaos.
+---
 
-This is your documentation home page. You can customize this content to describe your project.
+# Äquatormaßband × Titania Chaos
 
-## Getting Started
+<DraftTranslation lang="en" />
 
-Start by reading the [Guide](./guide/) for more information.
+<AequatorHero lang="en" />
 
-## Features
+## How it grows
 
-- 🚀 Lightning-fast documentation site
-- 📝 Simple Markdown syntax
-- 🎨 Beautiful default theme
-- ⚡ Instant HMR (Hot Module Replacement)
+People bring textile materials and the stories that live in them. The contributions are
+listened to, documented, measured, photographed, joined to one another and wound onto
+cable drums. What grows from this is an analogue archive of human history whose intended
+length is that of the Earth's equator.
+
+## The two roles
+
+<RoleBlock
+  name="Bianca Trappl"
+  role="Creator and artistic director" />
+
+<RoleBlock
+  name="Titania Chaos"
+  role="Ambassador and performative collaboration partner, since 2025"
+  bio="With clowning, body, play and immediate encounter, Titania Chaos opens the social space between the tape and the people." />
+
+## Read on
+
+- [Collaboration](./collaboration) — how the two roles work together
+- [Actions](./actions) — the documented actions
+- [Credits](./credits) — authorship, rights and consent
