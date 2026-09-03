@@ -1,4 +1,7 @@
+import { readFileSync } from 'node:fs'
 import type { HeadConfig, SiteConfig, TransformContext } from 'vitepress'
+import type { Action, Language } from '../types/index.ts'
+import { t } from './theme/localized.ts'
 
 /**
  * Every canonical URL, hreflang, sitemap entry and schema.org @id is built from
@@ -18,12 +21,14 @@ export interface LocaleMeta {
   prefix: string
   hreflang: string
   ogLocale: string
+  /** The content language, which is not the hreflang: de-AT is written in de. */
+  lang: Language
 }
 
 export const LOCALES: LocaleMeta[] = [
-  { prefix: '', hreflang: 'en', ogLocale: 'en_GB' },
-  { prefix: '/de', hreflang: 'de-AT', ogLocale: 'de_AT' },
-  { prefix: '/bg', hreflang: 'bg', ogLocale: 'bg_BG' }
+  { prefix: '', hreflang: 'en', ogLocale: 'en_GB', lang: 'en' },
+  { prefix: '/de', hreflang: 'de-AT', ogLocale: 'de_AT', lang: 'de' },
+  { prefix: '/bg', hreflang: 'bg', ogLocale: 'bg_BG', lang: 'bg' }
 ]
 
 /** The main Titania Chaos site, of which this project is a part. */
@@ -101,6 +106,39 @@ const TITANIA_ID = `${HOSTNAME}/#titania`
 const BIANCA_ID = `${HOSTNAME}${BASE}#bianca`
 const PROJECT_ID = `${HOSTNAME}${BASE}#project`
 const WEBSITE_ID = `${HOSTNAME}${BASE}#website`
+
+/**
+ * The actions, as schema.org Events, read from the same file the page renders
+ * from so the two cannot disagree. Only what is recorded is asserted: a name, a
+ * date, a place and a description. Roles are not, because the data says in as
+ * many words that no verified source text exists for who did what at each one --
+ * and a date is emitted at the precision it was verified to, so an action known
+ * only to a month stays `2025-11` rather than being padded to a day nobody
+ * confirmed.
+ */
+function publishedActions(): Action[] {
+  const file = new URL('../data/actions.json', import.meta.url)
+  const { actions } = JSON.parse(readFileSync(file, 'utf8')) as { actions: Action[] }
+  return actions
+    .filter((a) => a.publicationStatus === 'published')
+    .sort((a, b) => a.date.localeCompare(b.date))
+}
+
+function eventNodes(lang: Language) {
+  return publishedActions().map((action) => {
+    const place = t(action.place, lang)
+    return {
+      '@type': 'Event',
+      '@id': `${HOSTNAME}${BASE}#${action.stableId}`,
+      name: t(action.title, lang),
+      startDate: action.date,
+      description: t(action.summary, lang),
+      inLanguage: lang,
+      about: { '@id': PROJECT_ID },
+      ...(place ? { location: { '@type': 'Place', name: place } } : {})
+    }
+  })
+}
 
 export function buildHead(ctx: TransformContext, siteConfig: SiteConfig): HeadConfig[] {
   const urlPath = toUrlPath(ctx.page)
@@ -197,7 +235,9 @@ export function buildHead(ctx: TransformContext, siteConfig: SiteConfig): HeadCo
           inLanguage: locale.hreflang,
           isPartOf: { '@id': WEBSITE_ID },
           about: { '@id': PROJECT_ID }
-        }
+        },
+        // The actions belong to the page that describes them, not to every page.
+        ...(slug === '/actions' ? eventNodes(locale.lang) : [])
       ]
     })
   ])
