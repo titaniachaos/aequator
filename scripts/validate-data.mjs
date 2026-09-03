@@ -161,7 +161,9 @@ for (const item of media) {
   }
 }
 
-// Blueprint section 5: these two dates are verified and must not drift.
+// These two dates are verified and must not drift. The authority is the
+// blueprint document, which is not in this repository -- see provenance.json,
+// which identifies it by hash and records what else rests on it.
 const VERIFIED_DATES = {
   'action-2025-10-tuerkenschanzpark': '2025-10-30',
   'action-2026-03-maerzpark': '2026-03-04'

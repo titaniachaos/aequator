@@ -115,6 +115,49 @@ function* walk(dir) {
   }
 }
 
+/* -- every pinned value names an authority -------------------------------- */
+
+/**
+ * validate-data.mjs pins two dates and cites "Blueprint section 5" -- a document
+ * that is not in this repository, so the citation named something no reader
+ * could reach. provenance.json now records what each stated fact rests on and
+ * whether anyone can check it, and this makes sure a pin cannot be added
+ * without saying where it came from.
+ *
+ * The pinned ids are read out of the validator's source rather than written
+ * here, so this file declares no answer of its own.
+ */
+const provenance = json('provenance.json')
+const authorities = provenance.authorities ?? []
+const KINDS = new Set(Object.keys(provenance.checkableMeanings ?? {}))
+
+for (const a of authorities) {
+  if (!KINDS.has(a.checkable)) {
+    fail('provenance.json', `authority ${a.id} declares checkable "${a.checkable}", which is not one of ${[...KINDS].join(', ')}`)
+  }
+  if (!(a.authorises ?? []).length) {
+    fail('provenance.json', `authority ${a.id} authorises nothing -- remove it or say what rests on it`)
+  }
+}
+
+const validatorSource = read('scripts/validate-data.mjs')
+const pinBlock = /const VERIFIED_DATES = \{([^}]*)\}/.exec(validatorSource)?.[1] ?? ''
+const pinnedIds = [...pinBlock.matchAll(/'(action-[a-z0-9-]+)'/g)].map((m) => m[1])
+if (!pinnedIds.length) {
+  fail('scripts/validate-data.mjs', 'VERIFIED_DATES could not be read -- the provenance check is blind')
+}
+const authorisesPins = authorities.some((a) => (a.authorises ?? []).some((t) => t.includes('VERIFIED_DATES')))
+if (pinnedIds.length && !authorisesPins) {
+  fail('provenance.json', `${pinnedIds.length} dates are pinned in validate-data.mjs, but no authority claims VERIFIED_DATES`)
+}
+for (const id of pinnedIds) {
+  if (!published.some((a) => a.stableId === id)) {
+    fail('scripts/validate-data.mjs', `pins ${id}, which is not a published action`)
+  }
+}
+
+const checkable = authorities.filter((a) => a.checkable === 'live' || a.checkable === 'public').length
+
 /* -- ratchet -------------------------------------------------------------- */
 
 /**
@@ -141,4 +184,9 @@ console.log(
   `Claims agree with the data: ${restatements} restatements (floor ${FLOOR}), ` +
     `${monthOnly.length} month-precision of ${published.length} actions, ` +
     `${approved.length} approved media, ${withoutMedia.length} actions without.`
+)
+console.log(
+  `Authorities: ${authorities.length} recorded, ${checkable} of them checkable ` +
+    `(${authorities.length - checkable} rest on a document or a statement), ` +
+    `${pinnedIds.length} pinned dates accounted for.`
 )

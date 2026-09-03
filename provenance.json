@@ -1,0 +1,56 @@
+{
+  "note": "What each stated fact rests on, and whether anyone can check it. Kept at the repository root rather than under docs/ because it is a development record, not site content. A gate that names an arbiter nobody can check is a preferred opinion with a gate around it; this file is where that distinction is written down instead of assumed.",
+  "checkableMeanings": {
+    "live": "fetched and compared by a script; the arbiter answers for itself",
+    "fingerprint": "the source is identified by hash, so two people can confirm they hold the same document — its contents are still taken on trust",
+    "public": "a published constant anyone can look up",
+    "none": "a statement by the project owner; no artifact exists to check it against"
+  },
+  "authorities": [
+    {
+      "id": "origin-media-index",
+      "kind": "live-endpoint",
+      "url": "https://titaniachaos.com/media.json",
+      "checkable": "live",
+      "checkedBy": "scripts/check-origin.mjs",
+      "authorises": [
+        "docs/data/media.json: rights, caption, altText, sourceUrl, posterUrl",
+        "docs/.vitepress/seo.ts: OG_IMAGE and OG_IMAGE_SIZE"
+      ]
+    },
+    {
+      "id": "blueprint-v5",
+      "kind": "document",
+      "title": "Äquatormaßband × Titania Chaos – Codex One-Click Build Blueprint (V5.0 English Final)",
+      "sha256": "f7d66e0e81172b1338435fc3cd3914a290cced449e6ae5f2ee0a0ca99052bf2e",
+      "bytes": 129637,
+      "checkable": "fingerprint",
+      "heldBy": "the project owner. NOT in this repository: it carries internal approval notes, so it is identified here rather than committed.",
+      "authorises": [
+        "docs/data/project.json: the German one-sentence description",
+        "docs/data/actions.json: the German summaries of the four actions it tabulates",
+        "scripts/validate-data.mjs: VERIFIED_DATES"
+      ]
+    },
+    {
+      "id": "owner-statement-2026-09-03",
+      "kind": "statement",
+      "checkable": "none",
+      "authorises": [
+        "action-2026-03-sucht-menschsein: that its affiliation with the Äquatormaßband is confirmed",
+        "action-2025-11-wien: that the action took place at all"
+      ]
+    },
+    {
+      "id": "wgs84-equator",
+      "kind": "published-constant",
+      "checkable": "public",
+      "value": 40075,
+      "unit": "km",
+      "reference": "WGS 84 equatorial circumference, 40075.017 km, rounded to the kilometre",
+      "authorises": [
+        "docs/data/project.json: targetMeasureKm"
+      ]
+    }
+  ]
+}

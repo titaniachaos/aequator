@@ -100,6 +100,15 @@ markdown that types it again.
 The floor in that script is the number of places still saying a fact out loud. Lower it
 deliberately; raising it should take an argument.
 
+An arbiter nobody can check is a preferred opinion with a gate around it, so
+`provenance.json` records what each stated fact actually rests on and how far it can be
+verified: `live` (a script fetches it), `fingerprint` (a document identified by hash —
+two people can confirm they hold the same one, its contents are still trust), `public` (a
+published constant), or `none` (the project owner said so). Two of the four authorities
+here are checkable; the two that carry the German source text and the pinned dates are
+not, and saying that plainly is the point. The gate refuses a pinned date that no
+authority claims.
+
 Facts borrowed from the main site — the rights notice, each frame's caption, alt text and
 URLs, and the card image's real dimensions — are not ours to declare, so
 `npm run check:origin` asks titaniachaos.com instead. It needs the network and is
