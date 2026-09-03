@@ -33,3 +33,12 @@ length is that of the Earth's equator.
 - [Collaboration](./collaboration) — how the two roles work together
 - [Actions](./actions) — the documented actions
 - [Credits](./credits) — authorship, rights and consent
+
+## Film from the collaboration
+
+<MediaFigure id="aequator-stage-monologue" lang="en" />
+<MediaFigure id="aequator-night-circle" lang="en" />
+<MediaFigure id="aequator-skirt-dance" lang="en" />
+<MediaFigure id="aequator-audience-crossing" lang="en" />
+<MediaFigure id="aequator-circle-performance" lang="en" />
+<MediaFigure id="aequator-white-costume" lang="en" />

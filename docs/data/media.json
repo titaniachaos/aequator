@@ -30,11 +30,66 @@
         "bg": "Бананът идва от публиката, по време на представление с Äquatormassband. Виена, ноември 2025."
       },
       "eventId": "action-2025-11-wien"
+    },
+    {
+      "stableId": "aequator-stage-monologue", "type": "video_file",
+      "sourceUrl": "https://titaniachaos.com/images/media/aequator-stage-monologue.mp4",
+      "posterUrl": "https://titaniachaos.com/images/media/aequator-stage-monologue.webp",
+      "title": { "en": "Indoor scene", "de": "Szene im Innenraum", "bg": "Сцена на закрито" },
+      "copyrightHolder": "Tatiana Petkova (Titania Chaos)", "consentStatus": "approved",
+      "altText": { "en": "Titania Chaos speaks into a handheld microphone during an indoor performance", "de": "Titania Chaos spricht bei einem Auftritt in einem Innenraum in ein Handmikrofon", "bg": "Титания Хаос говори с ръчен микрофон по време на представление на закрито" },
+      "caption": { "en": "An indoor scene from Äquatormassband.", "de": "Eine Szene im Innenraum aus Äquatormassband.", "bg": "Сцена на закрито от Äquatormassband." }
+    },
+    {
+      "stableId": "aequator-night-circle", "type": "video_file",
+      "sourceUrl": "https://titaniachaos.com/images/media/aequator-night-circle.mp4",
+      "posterUrl": "https://titaniachaos.com/images/media/aequator-night-circle.webp",
+      "title": { "en": "Daylight into night", "de": "Vom Tageslicht in die Nacht", "bg": "От деня към нощта" },
+      "copyrightHolder": "Tatiana Petkova (Titania Chaos)", "consentStatus": "approved",
+      "altText": { "en": "Performers move around a taped circle in a park as daylight fades", "de": "Spielende bewegen sich bei einsetzender Dämmerung um einen mit Band markierten Kreis im Park", "bg": "Артисти се движат около очертан с лента кръг в парк при смрачаване" },
+      "caption": { "en": "Äquatormassband carries the performance from daylight into night.", "de": "Äquatormassband trägt den Auftritt vom Tageslicht in die Nacht.", "bg": "Äquatormassband продължава представлението от деня към нощта." }
+    },
+    {
+      "stableId": "aequator-skirt-dance", "type": "video_file",
+      "sourceUrl": "https://titaniachaos.com/images/media/aequator-skirt-dance.mp4",
+      "posterUrl": "https://titaniachaos.com/images/media/aequator-skirt-dance.webp",
+      "title": { "en": "Turning costume", "de": "Wirbelndes Kostüm", "bg": "Въртящ се костюм" },
+      "copyrightHolder": "Tatiana Petkova (Titania Chaos)", "consentStatus": "approved",
+      "altText": { "en": "Titania Chaos spins a broad green patterned skirt inside a taped performance circle", "de": "Titania Chaos wirbelt einen breiten grün gemusterten Rock in einem mit Band markierten Spielkreis", "bg": "Титания Хаос завърта широка зелена шарена пола в очертан с лента сценичен кръг" },
+      "caption": { "en": "A turning costume moment from the outdoor Äquatormassband performance.", "de": "Ein wirbelnder Kostümmoment aus dem Äquatormassband-Auftritt im Freien.", "bg": "Момент с въртящ се костюм от представлението на Äquatormassband на открито." }
+    },
+    {
+      "stableId": "aequator-audience-crossing", "type": "video_file",
+      "sourceUrl": "https://titaniachaos.com/images/media/aequator-audience-crossing.mp4",
+      "posterUrl": "https://titaniachaos.com/images/media/aequator-audience-crossing.webp",
+      "title": { "en": "Crossing the boundary", "de": "Die Grenze überqueren", "bg": "Преминаване на границата" },
+      "copyrightHolder": "Tatiana Petkova (Titania Chaos)", "consentStatus": "approved",
+      "altText": { "en": "Titania Chaos guides people across a taped performance line in a park", "de": "Titania Chaos führt Menschen in einem Park über eine mit Band markierte Spiellinie", "bg": "Титания Хаос превежда хора през сценична линия от лента в парк" },
+      "caption": { "en": "The boundary becomes part of the encounter in Äquatormassband.", "de": "Bei Äquatormassband wird die Grenze zum Teil der Begegnung.", "bg": "Границата става част от срещата в Äquatormassband." }
+    },
+    {
+      "stableId": "aequator-circle-performance", "type": "video_file",
+      "sourceUrl": "https://titaniachaos.com/images/media/aequator-circle-performance.mp4",
+      "posterUrl": "https://titaniachaos.com/images/media/aequator-circle-performance.webp",
+      "title": { "en": "The marked circle", "de": "Der markierte Kreis", "bg": "Очертаният кръг" },
+      "copyrightHolder": "Tatiana Petkova (Titania Chaos)", "consentStatus": "approved",
+      "altText": { "en": "Titania Chaos and another performer play beside props inside a taped circle", "de": "Titania Chaos und eine weitere spielende Person agieren neben Requisiten in einem mit Band markierten Kreis", "bg": "Титания Хаос и друг артист играят до реквизит в очертан с лента кръг" },
+      "caption": { "en": "The marked circle turns a park path into a stage for Äquatormassband.", "de": "Der markierte Kreis verwandelt einen Parkweg in die Bühne für Äquatormassband.", "bg": "Очертаният кръг превръща алеята в сцена за Äquatormassband." }
+    },
+    {
+      "stableId": "aequator-white-costume", "type": "video_file",
+      "sourceUrl": "https://titaniachaos.com/images/media/aequator-white-costume.mp4",
+      "posterUrl": "https://titaniachaos.com/images/media/aequator-white-costume.webp",
+      "title": { "en": "Prop transition", "de": "Requisitenwechsel", "bg": "Преход с реквизит" },
+      "copyrightHolder": "Tatiana Petkova (Titania Chaos)", "consentStatus": "approved",
+      "altText": { "en": "A performer in a white and blue costume gathers a long red fabric prop in a park", "de": "Eine spielende Person in weiß-blauem Kostüm nimmt in einem Park eine lange rote Stoffrequisite auf", "bg": "Артист в бяло-син костюм събира дълъг червен платнен реквизит в парк" },
+      "caption": { "en": "A brief prop transition during the outdoor Äquatormassband performance.", "de": "Ein kurzer Requisitenwechsel während des Äquatormassband-Auftritts im Freien.", "bg": "Кратък преход с реквизит по време на представлението на Äquatormassband на открито." }
     }
   ],
   "tbd": [
     "banana-encore has no per-frame creator: the main site records photographers as one rights line for the whole archive, not per image. copyrightHolder is taken from that line.",
-    "The other four recorded actions have no media. The Türkenschanzpark action is described as filmed, but no rights-cleared footage of it is published at https://titaniachaos.com/media.json"
+    "The other four recorded actions have no media paired to them.",
+    "The six newly approved Äquatormassband films are not yet paired to action records because their dates and places are not verified."
   ],
   "rights": "© Tatiana Petkova (Titania Chaos). Photographs by Veliko Balabanov, Marine Hink, Heidi Holtl, Geo Kalev, Tanya Matskevich, Konstantin Oberlik, Tatiana Petkova, Marion Scholz and Laurent Ziegler. Recorded verbatim from https://titaniachaos.com/media.json"
 }

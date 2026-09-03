@@ -21,7 +21,7 @@ Auf dieser Website wird ausschließlich Medienmaterial gezeigt, dessen Einwillig
 `approved` erfasst ist. Material mit dem Status `pending` oder `internal-only` erscheint
 weder auf den Seiten noch im Suchindex, in Metadaten oder unter den öffentlichen Dateien.
 
-Erfasst ist derzeit ein freigegebener Beitrag, zu sehen im [Journal](./journal). Die
+Erfasst sind derzeit sieben freigegebene Beiträge, hier und im [Journal](./journal) zu sehen. Die
 Dateien liegen auf der Hauptseite und werden von dort eingebunden, nicht kopiert: eine dort
 zurückgezogene Aufnahme ist damit auch hier zurückgezogen.
 

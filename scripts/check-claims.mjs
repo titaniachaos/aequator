@@ -35,9 +35,9 @@ const withoutMedia = published.filter((a) => !eventsWithMedia.has(a.stableId))
 
 /** Numerals, not answers: how to say a count, not what the count is. */
 const WORDS = {
-  en: { 1: 'One', 2: 'Two', 3: 'Three', 4: 'Four', 5: 'Five' },
-  de: { 1: 'ein', 2: 'zwei', 3: 'drei', 4: 'vier', 5: 'fünf' },
-  bg: { 1: 'един', 2: 'две', 3: 'три', 4: 'четири', 5: 'пет' }
+  en: { 1: 'One', 2: 'Two', 3: 'Three', 4: 'Four', 5: 'Five', 7: 'Seven' },
+  de: { 1: 'ein', 2: 'zwei', 3: 'drei', 4: 'vier', 5: 'fünf', 7: 'sieben' },
+  bg: { 1: 'един', 2: 'две', 3: 'три', 4: 'четири', 5: 'пет', 7: 'седем' }
 }
 const word = (lang, n) => WORDS[lang]?.[n]
 
@@ -53,9 +53,9 @@ const CLAIMS = [
   ['docs/de/actions.md', 'de', () => monthOnly.length, (w) => `Bei ${w} Aktionen ist nur der Monat geprüft`],
   ['docs/bg/actions.md', 'bg', () => monthOnly.length, (w) => `При ${w} акции е проверен само месецът`],
   // "One cleared entry is recorded"
-  ['docs/credits.md', 'en', () => approved.length, (w) => `${w} cleared entry is recorded`],
-  ['docs/de/credits.md', 'de', () => approved.length, (w) => `${w} freigegebener Beitrag`],
-  ['docs/bg/credits.md', 'bg', () => approved.length, (w) => `${w} изчистен по права принос`],
+  ['docs/credits.md', 'en', () => approved.length, (w) => `${w} cleared entries are recorded`],
+  ['docs/de/credits.md', 'de', () => approved.length, (w) => `${w} freigegebene Beiträge`],
+  ['docs/bg/credits.md', 'bg', () => approved.length, (w) => `${w} изчистени по права приноса`],
   // README
   ['README.md', 'en', () => monthOnly.length, (w) => `not verified for ${w.toLowerCase()} actions`],
   ['README.md', 'en', () => withoutMedia.length, (w) => `${w} of the five recorded actions still have no media`]

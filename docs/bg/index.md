@@ -33,3 +33,12 @@ description: Партиципативен проект за текстилно �
 - [Сътрудничество](./collaboration) — как двете роли работят заедно
 - [Акции](./actions) — документираните акции
 - [Екип](./credits) — авторство, права и съгласия
+
+## Филм от сътрудничеството
+
+<MediaFigure id="aequator-stage-monologue" lang="bg" />
+<MediaFigure id="aequator-night-circle" lang="bg" />
+<MediaFigure id="aequator-skirt-dance" lang="bg" />
+<MediaFigure id="aequator-audience-crossing" lang="bg" />
+<MediaFigure id="aequator-circle-performance" lang="bg" />
+<MediaFigure id="aequator-white-costume" lang="bg" />

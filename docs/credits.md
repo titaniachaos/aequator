@@ -23,7 +23,7 @@ This site shows only media whose consent is recorded as `approved`. Material wit
 status `pending` or `internal-only` appears neither on the pages nor in the search index,
 in metadata, or among the public files.
 
-One cleared entry is recorded, shown in the [Journal](./journal). The files live on the main
+Seven cleared entries are recorded, shown here and in the [Journal](./journal). The files live on the main
 site and are embedded from there rather than copied: a frame withdrawn there is withdrawn
 here too.
 

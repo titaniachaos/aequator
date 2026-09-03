@@ -31,3 +31,12 @@ Menschheitsgeschichte, dessen gedachte Länge dem Erdäquator entspricht.
 - [Zusammenarbeit](./collaboration) — wie die beiden Rollen zusammenwirken
 - [Aktionen](./actions) — die dokumentierten Aktionen
 - [Mitwirkende](./credits) — Urheberschaft, Rechte und Einwilligungen
+
+## Film aus der Zusammenarbeit
+
+<MediaFigure id="aequator-stage-monologue" lang="de" />
+<MediaFigure id="aequator-night-circle" lang="de" />
+<MediaFigure id="aequator-skirt-dance" lang="de" />
+<MediaFigure id="aequator-audience-crossing" lang="de" />
+<MediaFigure id="aequator-circle-performance" lang="de" />
+<MediaFigure id="aequator-white-costume" lang="de" />
