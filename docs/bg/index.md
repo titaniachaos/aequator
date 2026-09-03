@@ -42,3 +42,8 @@ description: Партиципативен проект за текстилно �
 <MediaFigure id="aequator-audience-crossing" lang="bg" />
 <MediaFigure id="aequator-circle-performance" lang="bg" />
 <MediaFigure id="aequator-white-costume" lang="bg" />
+<MediaFigure id="youtube-igajwe6xm7o" lang="bg" />
+<MediaFigure id="youtube-jt3a8ywdlws" lang="bg" />
+<MediaFigure id="youtube-mrpckrjta9s" lang="bg" />
+<MediaFigure id="youtube-tuerkenschanzpark-2025" lang="bg" />
+<MediaFigure id="youtube-platz-menschenrechte-2025" lang="bg" />

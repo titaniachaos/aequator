@@ -84,11 +84,55 @@
       "copyrightHolder": "Tatiana Petkova (Titania Chaos)", "consentStatus": "approved",
       "altText": { "en": "A performer in a white and blue costume gathers a long red fabric prop in a park", "de": "Eine spielende Person in weiß-blauem Kostüm nimmt in einem Park eine lange rote Stoffrequisite auf", "bg": "Артист в бяло-син костюм събира дълъг червен платнен реквизит в парк" },
       "caption": { "en": "A brief prop transition during the outdoor Äquatormassband performance.", "de": "Ein kurzer Requisitenwechsel während des Äquatormassband-Auftritts im Freien.", "bg": "Кратък преход с реквизит по време на представлението на Äquatormassband на открито." }
+    },
+    {
+      "stableId": "youtube-igajwe6xm7o", "type": "youtube",
+      "sourceUrl": "https://www.youtube.com/watch?v=IgAjWe6xm7o",
+      "title": { "en": "Titania Chaos – Äquatormaßband: Fabric stories for peace", "de": "Titania Chaos – Äquatormaßband: Stoffgeschichten für den Frieden", "bg": "Титания Хаос – Äquatormaßband: Истории от плат за мир" },
+      "creator": "Krasimir Stoichkov", "consentStatus": "approved",
+      "altText": { "en": "Video: Titania Chaos and Äquatormaßband — fabric stories for peace", "de": "Video: Titania Chaos und Äquatormaßband – Stoffgeschichten für den Frieden", "bg": "Видео: Титания Хаос и Äquatormaßband — истории от плат за мир" },
+      "caption": { "en": "Titania Chaos and Äquatormaßband: fabric stories for peace.", "de": "Titania Chaos und Äquatormaßband: Stoffgeschichten für den Frieden.", "bg": "Титания Хаос и Äquatormaßband: истории от плат за мир." }
+    },
+    {
+      "stableId": "youtube-jt3a8ywdlws", "type": "youtube",
+      "sourceUrl": "https://www.youtube.com/watch?v=Jt3A8YWdlWs",
+      "title": { "en": "Äquatormassband with Titania Chaos", "de": "Äquatormassband mit Titania Chaos", "bg": "Äquatormassband с Титания Хаос" },
+      "creator": "Krasimir Stoichkov", "consentStatus": "approved",
+      "altText": { "en": "Video: Äquatormassband with Titania Chaos", "de": "Video: Äquatormassband mit Titania Chaos", "bg": "Видео: Äquatormassband с Титания Хаос" },
+      "caption": { "en": "Äquatormassband with Titania Chaos.", "de": "Äquatormassband mit Titania Chaos.", "bg": "Äquatormassband с Титания Хаос." }
+    },
+    {
+      "stableId": "youtube-mrpckrjta9s", "type": "youtube",
+      "sourceUrl": "https://www.youtube.com/watch?v=mRpckRJtA9s",
+      "title": { "en": "Äquatormassband — aerial film", "de": "Äquatormassband – Luftaufnahme", "bg": "Äquatormassband — въздушни кадри" },
+      "creator": "Krasimir Stoichkov", "consentStatus": "approved",
+      "altText": { "en": "Aerial video from the Äquatormassband collaboration", "de": "Luftaufnahme aus der Zusammenarbeit Äquatormassband", "bg": "Въздушно видео от сътрудничеството Äquatormassband" },
+      "caption": { "en": "Aerial film from the Äquatormassband collaboration.", "de": "Luftaufnahme aus der Zusammenarbeit Äquatormassband.", "bg": "Въздушни кадри от сътрудничеството Äquatormassband." }
+    },
+    {
+      "stableId": "youtube-tuerkenschanzpark-2025", "type": "youtube",
+      "sourceUrl": "https://www.youtube.com/watch?v=VyW32ZKq5kk",
+      "title": { "en": "Türkenschanzpark, October 2025", "de": "Türkenschanzpark, Oktober 2025", "bg": "Тюркеншанцпарк, октомври 2025" },
+      "date": "2025-10", "place": { "en": "Türkenschanzpark, Vienna", "de": "Türkenschanzpark, Wien", "bg": "Тюркеншанцпарк, Виена" },
+      "creator": "Krasimir Stoichkov", "consentStatus": "approved",
+      "altText": { "en": "Video of Äquatormassband and Titania Chaos in Türkenschanzpark, Vienna", "de": "Video von Äquatormassband und Titania Chaos im Türkenschanzpark, Wien", "bg": "Видео на Äquatormassband и Титания Хаос в Тюркеншанцпарк, Виена" },
+      "caption": { "en": "Äquatormassband and Titania Chaos in Türkenschanzpark, Vienna, October 2025.", "de": "Äquatormassband und Titania Chaos im Türkenschanzpark, Wien, Oktober 2025.", "bg": "Äquatormassband и Титания Хаос в Тюркеншанцпарк, Виена, октомври 2025." },
+      "eventId": "action-2025-10-tuerkenschanzpark"
+    },
+    {
+      "stableId": "youtube-platz-menschenrechte-2025", "type": "youtube",
+      "sourceUrl": "https://www.youtube.com/watch?v=KsnytG7GYZM",
+      "title": { "en": "Platz der Menschenrechte, September 2025", "de": "Platz der Menschenrechte, September 2025", "bg": "Площад на човешките права, септември 2025" },
+      "date": "2025-09", "place": { "en": "Platz der Menschenrechte, Vienna", "de": "Platz der Menschenrechte, Wien", "bg": "Платц дер Меншенрехте, Виена" },
+      "creator": "Krasimir Stoichkov", "consentStatus": "approved",
+      "altText": { "en": "Video from Platz der Menschenrechte, Vienna, September 2025", "de": "Video vom Platz der Menschenrechte, Wien, September 2025", "bg": "Видео от Площада на човешките права, Виена, септември 2025" },
+      "caption": { "en": "Presentation at Platz der Menschenrechte, Vienna, September 2025.", "de": "Präsentation am Platz der Menschenrechte, Wien, September 2025.", "bg": "Представяне на Площада на човешките права, Виена, септември 2025." },
+      "eventId": "action-2025-09-platz-menschenrechte"
     }
   ],
   "tbd": [
     "banana-encore has no per-frame creator: the main site records photographers as one rights line for the whole archive, not per image. copyrightHolder is taken from that line.",
-    "The other four recorded actions have no media paired to them.",
+    "The other two recorded actions have no media paired to them.",
     "The six newly approved Äquatormassband films are not yet paired to action records because their dates and places are not verified."
   ],
   "rights": "© Tatiana Petkova (Titania Chaos). Photographs by Veliko Balabanov, Marine Hink, Heidi Holtl, Geo Kalev, Tanya Matskevich, Konstantin Oberlik, Tatiana Petkova, Marion Scholz and Laurent Ziegler. Recorded verbatim from https://titaniachaos.com/media.json"

@@ -40,3 +40,8 @@ Menschheitsgeschichte, dessen gedachte Länge dem Erdäquator entspricht.
 <MediaFigure id="aequator-audience-crossing" lang="de" />
 <MediaFigure id="aequator-circle-performance" lang="de" />
 <MediaFigure id="aequator-white-costume" lang="de" />
+<MediaFigure id="youtube-igajwe6xm7o" lang="de" />
+<MediaFigure id="youtube-jt3a8ywdlws" lang="de" />
+<MediaFigure id="youtube-mrpckrjta9s" lang="de" />
+<MediaFigure id="youtube-tuerkenschanzpark-2025" lang="de" />
+<MediaFigure id="youtube-platz-menschenrechte-2025" lang="de" />

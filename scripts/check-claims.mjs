@@ -35,9 +35,9 @@ const withoutMedia = published.filter((a) => !eventsWithMedia.has(a.stableId))
 
 /** Numerals, not answers: how to say a count, not what the count is. */
 const WORDS = {
-  en: { 1: 'One', 2: 'Two', 3: 'Three', 4: 'Four', 5: 'Five', 7: 'Seven' },
-  de: { 1: 'ein', 2: 'zwei', 3: 'drei', 4: 'vier', 5: 'fünf', 7: 'sieben' },
-  bg: { 1: 'един', 2: 'две', 3: 'три', 4: 'четири', 5: 'пет', 7: 'седем' }
+  en: { 1: 'One', 2: 'Two', 3: 'Three', 4: 'Four', 5: 'Five', 7: 'Seven', 12: 'Twelve' },
+  de: { 1: 'ein', 2: 'zwei', 3: 'drei', 4: 'vier', 5: 'fünf', 7: 'sieben', 12: 'zwölf' },
+  bg: { 1: 'един', 2: 'две', 3: 'три', 4: 'четири', 5: 'пет', 7: 'седем', 12: 'дванадесет' }
 }
 const word = (lang, n) => WORDS[lang]?.[n]
 

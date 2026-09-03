@@ -23,9 +23,9 @@ This site shows only media whose consent is recorded as `approved`. Material wit
 status `pending` or `internal-only` appears neither on the pages nor in the search index,
 in metadata, or among the public files.
 
-Seven cleared entries are recorded, shown here and in the [Journal](./journal). The files live on the main
-site and are embedded from there rather than copied: a frame withdrawn there is withdrawn
-here too.
+Twelve cleared entries are recorded, shown here and in the [Journal](./journal). Seven files live on the
+main site and are embedded from there rather than copied; five films are linked from YouTube and load
+only after a visitor chooses to play them.
 
 The main site's rights notice:
 

@@ -121,8 +121,8 @@ Recorded in the `tbd` arrays of the data files and on the pages themselves:
 
 - The exact day is not verified for three actions: Platz der Menschenrechte (September 2025),
   Vienna (November 2025) and the "Sucht & Menschsein" festival (March 2026).
-- Four of the five recorded actions still have no media of their own. Türkenschanzpark is described
-  as filmed, but no rights-cleared footage of it is published on the main site.
+- Two of the five recorded actions still have no media of their own. The September and October 2025
+  action films are linked from the project's public YouTube channel.
 - `action-2025-11-wien` has no recorded venue within Vienna. Its title and summary restate
   the published caption and alt text of `banana-encore` and claim nothing beyond them.
 - Photographers are credited as one notice for the whole archive, not per frame, so there is

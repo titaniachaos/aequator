@@ -42,3 +42,8 @@ length is that of the Earth's equator.
 <MediaFigure id="aequator-audience-crossing" lang="en" />
 <MediaFigure id="aequator-circle-performance" lang="en" />
 <MediaFigure id="aequator-white-costume" lang="en" />
+<MediaFigure id="youtube-igajwe6xm7o" lang="en" />
+<MediaFigure id="youtube-jt3a8ywdlws" lang="en" />
+<MediaFigure id="youtube-mrpckrjta9s" lang="en" />
+<MediaFigure id="youtube-tuerkenschanzpark-2025" lang="en" />
+<MediaFigure id="youtube-platz-menschenrechte-2025" lang="en" />

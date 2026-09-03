@@ -35,7 +35,8 @@ if (localRights !== (origin.rights ?? '').trim()) {
   fail('the rights notice differs from the origin')
 }
 
-for (const item of local.media) {
+const borrowed = local.media.filter((item) => item.type !== 'youtube')
+for (const item of borrowed) {
   const o = byId.get(item.stableId)
   if (!o) {
     fail(`${item.stableId} is not published at the origin any more -- it must not be shown here`)
@@ -79,4 +80,4 @@ if (problems.length) {
   for (const p of problems) console.error(`  - ${p}`)
   process.exit(1)
 }
-console.log(`Agrees with ${ORIGIN}: rights notice, ${local.media.length} frame(s), card image ${stated.w}x${stated.h}.`)
+console.log(`Agrees with ${ORIGIN}: rights notice, ${borrowed.length} borrowed frame(s), card image ${stated.w}x${stated.h}.`)

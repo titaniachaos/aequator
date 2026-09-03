@@ -130,6 +130,29 @@ body {
 .media-figure { margin: 1.75rem 0; }
 .media-figure img,
 .media-figure video { width: 100%; height: auto; border-radius: 8px; }
+.media-figure__youtube { position: relative; }
+.media-figure__youtube iframe,
+.media-figure__youtube button {
+  display: flex;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+  border-radius: 8px;
+}
+.media-figure__youtube iframe { background: #000; }
+.media-figure__youtube button {
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  color: white;
+  background: #202020;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 600;
+}
+.media-figure__youtube button:hover { background: #303030; }
+.media-figure__play { color: #ff0033; font-size: 2rem; }
+.media-figure__youtube > a { display: inline-block; margin-top: 0.5rem; font-size: 13px; }
 .media-figure figcaption {
   margin-top: 0.6rem;
   font-size: 13px;

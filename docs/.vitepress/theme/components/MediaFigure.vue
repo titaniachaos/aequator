@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed } from 'vue'
+import { computed, ref } from 'vue'
 import { withBase } from 'vitepress'
 import type { Language } from '../../../types/index.ts'
 import { data } from '../../media.data.ts'
@@ -25,6 +25,15 @@ const src = computed(() => {
 
 const caption = computed(() => t(item.value?.caption ?? item.value?.title, lang.value))
 const alt = computed(() => t(item.value?.altText, lang.value) || caption.value)
+const youtubeOpen = ref(false)
+const youtubeId = computed(() => item.value?.sourceUrl?.match(/[?&]v=([^&]+)/)?.[1] ?? '')
+const youtubeEmbed = computed(() => `https://www.youtube-nocookie.com/embed/${youtubeId.value}?autoplay=1`)
+const youtubeLabels = {
+  en: { play: 'Play video from YouTube', open: 'Open on YouTube' },
+  de: { play: 'Video von YouTube abspielen', open: 'Auf YouTube öffnen' },
+  bg: { play: 'Пускане на видеото от YouTube', open: 'Отваряне в YouTube' }
+}
+const youtubeLabel = computed(() => youtubeLabels[lang.value])
 const credit = computed(() => {
   const parts = [item.value?.creator, item.value?.copyrightHolder].filter(Boolean)
   return parts.length ? `© ${parts.join(' · ')}` : ''
@@ -48,6 +57,21 @@ const credit = computed(() => {
       controls
       preload="none"
     />
+    <div v-else-if="item.type === 'youtube'" class="media-figure__youtube">
+      <iframe
+        v-if="youtubeOpen"
+        :src="youtubeEmbed"
+        :title="alt"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      />
+      <button v-else type="button" @click="youtubeOpen = true">
+        <span class="media-figure__play" aria-hidden="true">▶</span>
+        <span>{{ youtubeLabel.play }}</span>
+      </button>
+      <a :href="src" target="_blank" rel="noopener noreferrer">{{ youtubeLabel.open }}</a>
+    </div>
     <audio v-else-if="item.type === 'audio'" :src="src" controls preload="none" />
     <figcaption v-if="caption || credit">
       <span v-if="caption">{{ caption }}</span>
