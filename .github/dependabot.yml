@@ -15,6 +15,12 @@ updates:
       # ./lib/tsc -- which is exactly what vue-tsc resolves in order to run the
       # checker, so `vue-tsc --noEmit` cannot start at all. The 6.x line is the
       # last JavaScript implementation and is what vue-tsc supports today.
+      # vue-tsc 3.3.11 fails the same way, so this is not a stale checker: there
+      # is no vue-tsc that drives the native compiler yet. The one workaround is
+      # typescript-native-bridge, a TS 6 front-end over the tsgo checker by the
+      # vue-tsc maintainer -- weighed and declined, because it puts a forked
+      # toolchain shipping native binaries into the pipeline that gates a public
+      # site, for no gain on a project this size.
       # Remove this once vue-tsc can drive the native compiler.
       - dependency-name: typescript
         versions: ['>=7']
