@@ -27,7 +27,7 @@ zurückgezogene Aufnahme ist damit auch hier zurückgezogen.
 
 Rechtevermerk der Hauptseite:
 
-> © Tatiana Petkova (Titania Chaos). Photographs by Veliko Balabanov, Marine Hink, Heidi Holtl, Geo Kalev, Tanya Matskevich, Konstantin Oberlik, Tatiana Petkova, Marion Scholz and Laurent Ziegler.
+<MediaRights />
 
 ## Offen
 

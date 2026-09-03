@@ -11,6 +11,9 @@ import type { MediaItem } from '../types/index.ts'
 export interface MediaData {
   media: MediaItem[]
   byId: Record<string, MediaItem>
+  /** The rights notice, as the main site publishes it. Pages render this rather
+   *  than retyping it, so there is one copy to correct. */
+  rights: string
 }
 
 declare const data: MediaData
@@ -20,10 +23,11 @@ export default defineLoader({
   watch: ['../data/media.json'],
   load(): MediaData {
     const file = new URL('../data/media.json', import.meta.url)
-    const parsed = JSON.parse(readFileSync(file, 'utf8')) as { media: MediaItem[] }
+    const parsed = JSON.parse(readFileSync(file, 'utf8')) as { media: MediaItem[]; rights?: string }
     const media = parsed.media.filter((item) => item.consentStatus === 'approved')
     const byId: Record<string, MediaItem> = {}
     for (const item of media) byId[item.stableId] = item
-    return { media, byId }
+    const rights = (parsed.rights ?? '').replace(/\s*Recorded verbatim from \S+\s*$/, '')
+    return { media, byId, rights }
   }
 })

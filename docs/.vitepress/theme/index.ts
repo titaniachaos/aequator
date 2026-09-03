@@ -3,6 +3,7 @@ import DefaultTheme from 'vitepress/theme'
 import AequatorHero from './components/AequatorHero.vue'
 import ActionCard from './components/ActionCard.vue'
 import MediaFigure from './components/MediaFigure.vue'
+import MediaRights from './components/MediaRights.vue'
 import RoleBlock from './components/RoleBlock.vue'
 import DraftTranslation from './DraftTranslation.vue'
 import './custom.css'
@@ -16,6 +17,8 @@ export default {
     // Renders only media whose consent is approved; see media.data.ts.
     app.component('MediaFigure', MediaFigure)
     app.component('RoleBlock', RoleBlock)
+    // The rights notice, read from media.json. See MediaRights.vue.
+    app.component('MediaRights', MediaRights)
     app.component('DraftTranslation', DraftTranslation)
   }
 } satisfies Theme

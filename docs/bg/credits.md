@@ -28,7 +28,7 @@ description: Авторство, права и съгласия в Äquatormaßb
 
 Бележка за правата от основния сайт:
 
-> © Tatiana Petkova (Titania Chaos). Photographs by Veliko Balabanov, Marine Hink, Heidi Holtl, Geo Kalev, Tanya Matskevich, Konstantin Oberlik, Tatiana Petkova, Marion Scholz and Laurent Ziegler.
+<MediaRights />
 
 ## Отворено
 

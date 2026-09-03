@@ -29,7 +29,7 @@ here too.
 
 The main site's rights notice:
 
-> © Tatiana Petkova (Titania Chaos). Photographs by Veliko Balabanov, Marine Hink, Heidi Holtl, Geo Kalev, Tanya Matskevich, Konstantin Oberlik, Tatiana Petkova, Marion Scholz and Laurent Ziegler.
+<MediaRights />
 
 ## Open
 

@@ -40,6 +40,11 @@ jobs:
       - name: Validate the project data
         run: npm run validate:data
 
+      # A count stated in prose and also derivable from the data is two copies of
+      # one fact. This asks the data and checks the pages still agree with it.
+      - name: Check the claims against the data
+        run: npm run check:claims
+
       - name: Typecheck
         run: npm run typecheck
 

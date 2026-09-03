@@ -16,6 +16,8 @@ npm install
 npm run docs:dev        # local development server
 npm run check           # validate:data + typecheck + build, what CI runs
 npm run validate:data   # schema validation and the privacy scan
+npm run check:claims    # counts stated in prose vs the data that owns them
+npm run check:origin    # borrowed facts vs titaniachaos.com (needs the network)
 npm run typecheck       # vue-tsc --noEmit
 npm run docs:build      # production build into docs/.vitepress/dist
 npm run docs:preview    # serve the built site
@@ -84,6 +86,25 @@ honour that request rather than two.
 To add a frame, publish it on the main site first, then copy its record into
 `docs/data/media.json` with `consentStatus: 'approved'`. The validator requires a creator
 or a copyright holder, and alt text or a caption, before it will let one through.
+
+## One fact, one place
+
+A quantity stated in prose and also derivable from the data is two copies of one fact,
+and two copies drift apart. `docs/data/*.json` is the arbiter, and
+`npm run check:claims` asks it: every count is computed, never written into the check,
+and a page that says a number the data no longer holds fails the build. The rights
+notice is not restated at all — it was retyped in three credits pages until
+`<MediaRights />` began reading it from `media.json`, and the check now refuses any
+markdown that types it again.
+
+The floor in that script is the number of places still saying a fact out loud. Lower it
+deliberately; raising it should take an argument.
+
+Facts borrowed from the main site — the rights notice, each frame's caption, alt text and
+URLs, and the card image's real dimensions — are not ours to declare, so
+`npm run check:origin` asks titaniachaos.com instead. It needs the network and is
+deliberately outside `npm run check`, because the deploy gate must pass on a fresh clone
+with none.
 
 ## Open questions
 

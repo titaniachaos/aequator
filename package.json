@@ -13,7 +13,9 @@
     "docs:preview": "vitepress preview docs",
     "validate:data": "node scripts/validate-data.mjs",
     "typecheck": "vue-tsc --noEmit -p tsconfig.json",
-    "check": "npm run validate:data && npm run typecheck && npm run docs:build"
+    "check": "npm run validate:data && npm run check:claims && npm run typecheck && npm run docs:build",
+    "check:claims": "node scripts/check-claims.mjs",
+    "check:origin": "node scripts/check-origin.mjs"
   },
   "keywords": [],
   "author": "",
