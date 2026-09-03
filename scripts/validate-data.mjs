@@ -155,13 +155,6 @@ for (const [id, date] of Object.entries(VERIFIED_DATES)) {
   else if (found.date !== date) fail('data/actions.json', `${id} date is ${found.date}, verified is ${date}`)
 }
 
-// The affiliation of "Sucht & Menschsein" is unverified, so it must not be
-// published until the source confirms it.
-const sucht = actions.find((a) => a.stableId === 'action-2026-03-sucht-menschsein')
-if (sucht && sucht.publicationStatus === 'published') {
-  fail('data/actions.json', 'action-2026-03-sucht-menschsein affiliation is unverified and cannot be published')
-}
-
 for (const item of media) {
   if (item.consentStatus !== 'approved') continue
   if (!item.creator && !item.copyrightHolder) {

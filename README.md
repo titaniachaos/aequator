@@ -65,17 +65,14 @@ Three rules are enforced by code rather than by care:
   `docs/data/sources.json` holds public, verified, `https://` links only.
 
 The validator also pins the two verified dates (Türkenschanzpark 2025-10-30, Märzpark
-2026-03-04) and refuses to let the unverified "Sucht & Menschsein" affiliation be marked
-published.
+2026-03-04).
 
 ## Open questions
 
 Recorded in the `tbd` arrays of the data files and on the pages themselves:
 
-- The affiliation of the "Sucht & Menschsein" festival (Margareten, March 2026) with the
-  Äquatormaßband is **unverified**. It is kept in `actions.json` as `draft` and excluded
-  from the build.
-- The exact day of the Platz der Menschenrechte action (September 2025) is not verified.
+- The exact day is not verified for two actions: Platz der Menschenrechte (September 2025)
+  and the "Sucht & Menschsein" festival (March 2026). Both are month-precision.
 - No media, creators, copyright holders or consent records have been supplied — so the
   journal and credits pages have nothing to show.
 - No public verified source URLs exist yet for the project or any action.

@@ -88,20 +88,20 @@
         "en": "Margareten, Vienna",
         "bg": "Маргаретен, Виена"
       },
-      "status": "draft",
+      "status": "published",
       "summary": {
-        "de": "Interaktive Installation beim Festival „Sucht & Menschsein“ (Zugehörigkeit zum Äquatormaßband muss geprüft werden).",
-        "en": "Interactive installation at the “Sucht & Menschsein” festival (affiliation with the Äquatormaßband must be verified).",
-        "bg": "Интерактивна инсталация на фестивала „Sucht & Menschsein“ (принадлежността към Äquatormaßband подлежи на проверка)."
+        "de": "Interaktive Installation beim Festival „Sucht & Menschsein“.",
+        "en": "Interactive installation at the “Sucht & Menschsein” festival.",
+        "bg": "Интерактивна инсталация на фестивала „Sucht & Menschsein“."
       },
       "mediaIds": [],
       "sourceLinks": [],
-      "publicationStatus": "draft"
+      "publicationStatus": "published"
     }
   ],
   "tbd": [
     "action-2025-09-platz-menschenrechte: exact day of the September 2025 action is not verified (month-precision only).",
-    "action-2026-03-sucht-menschsein: affiliation with the Äquatormaßband is UNVERIFIED — kept as draft and excluded from published listings.",
+    "action-2026-03-sucht-menschsein: exact day of the March 2026 action is not verified (month-precision only). Affiliation with the Äquatormaßband confirmed by the source 2026-09-03.",
     "whatHappened / artisticRelevance / biancaRole / titaniaRole / participants / credits: no verified source text supplied."
   ]
 }

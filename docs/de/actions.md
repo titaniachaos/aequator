@@ -16,10 +16,7 @@ Aufgeführt sind nur Aktionen mit geprüftem Datum und geprüfter Zugehörigkeit
 
 ## Offen
 
-- Zum Festival „Sucht &amp; Menschsein“ (Margareten, März 2026) liegt eine Beschreibung
-  vor, die Zugehörigkeit zum Äquatormaßband ist jedoch **ungeprüft**. Die Aktion bleibt
-  bis zur Bestätigung durch die Quelle unveröffentlicht.
-- Für die Aktion am Platz der Menschenrechte ist nur der Monat (September 2025), nicht
-  der genaue Tag geprüft.
+- Für die Aktion am Platz der Menschenrechte (September 2025) und für das Festival
+  „Sucht &amp; Menschsein“ (März 2026) ist nur der Monat, nicht der genaue Tag geprüft.
 - Verlauf, künstlerische Einordnung, Beteiligte und Credits der einzelnen Aktionen sind
   noch nicht in geprüfter Form vorhanden. **TBD.**

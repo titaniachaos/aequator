@@ -18,10 +18,8 @@ listed.
 
 ## Open
 
-- A description exists for the “Sucht &amp; Menschsein” festival (Margareten, March 2026),
-  but its affiliation with the Äquatormaßband is **unverified**. The action stays
-  unpublished until the source confirms it.
-- For the action at Platz der Menschenrechte only the month (September 2025) is verified,
-  not the exact day.
+- For the action at Platz der Menschenrechte (September 2025) and for the
+  “Sucht &amp; Menschsein” festival (March 2026) only the month is verified, not the
+  exact day.
 - What happened, artistic relevance, participants and credits for the individual actions
   do not yet exist in verified form. **TBD.**
