@@ -1,0 +1,107 @@
+{
+  "$schemaNote": "German summaries are verbatim from the authoritative project source (Blueprint V5.0 §6). English and Bulgarian strings are machine-generated drafts pending review.",
+  "translationReview": {
+    "de": "verified",
+    "en": "draft",
+    "bg": "draft"
+  },
+  "actions": [
+    {
+      "stableId": "action-2025-09-platz-menschenrechte",
+      "title": {
+        "de": "Platz der Menschenrechte, Wien",
+        "en": "Platz der Menschenrechte, Vienna",
+        "bg": "Площад на човешките права, Виена"
+      },
+      "date": "2025-09",
+      "place": {
+        "de": "Platz der Menschenrechte, Wien",
+        "en": "Platz der Menschenrechte, Vienna",
+        "bg": "Платц дер Меншенрехте, Виена"
+      },
+      "status": "published",
+      "summary": {
+        "de": "Stoffgeschichten, tiefes Hören und Clownerie im Kontext „Frauen, Frieden und Sicherheit“.",
+        "en": "Fabric stories, deep listening and clowning in the context of “Women, Peace and Security”.",
+        "bg": "Истории от плат, дълбоко слушане и клоунада в контекста на „Жени, мир и сигурност“."
+      },
+      "mediaIds": [],
+      "sourceLinks": [],
+      "publicationStatus": "published"
+    },
+    {
+      "stableId": "action-2025-10-tuerkenschanzpark",
+      "title": {
+        "de": "Türkenschanzpark, Wien",
+        "en": "Türkenschanzpark, Vienna",
+        "bg": "Тюркеншанцпарк, Виена"
+      },
+      "date": "2025-10-30",
+      "place": {
+        "de": "Türkenschanzpark, Wien",
+        "en": "Türkenschanzpark, Vienna",
+        "bg": "Тюркеншанцпарк, Виена"
+      },
+      "status": "published",
+      "summary": {
+        "de": "Gemeinsame, filmisch dokumentierte Aktionen im Türkenschanzpark.",
+        "en": "Joint actions in Türkenschanzpark, documented on film.",
+        "bg": "Съвместни акции в Тюркеншанцпарк, документирани на филм."
+      },
+      "mediaIds": [],
+      "sourceLinks": [],
+      "publicationStatus": "published"
+    },
+    {
+      "stableId": "action-2026-03-maerzpark",
+      "title": {
+        "de": "Märzpark, Wien",
+        "en": "Märzpark, Vienna",
+        "bg": "Мерцпарк, Виена"
+      },
+      "date": "2026-03-04",
+      "place": {
+        "de": "Märzpark, Wien",
+        "en": "Märzpark, Vienna",
+        "bg": "Мерцпарк, Виена"
+      },
+      "status": "published",
+      "summary": {
+        "de": "Aktion gegenüber der Berufsschule für Handel und Reisen.",
+        "en": "Action opposite the Berufsschule für Handel und Reisen.",
+        "bg": "Акция срещу професионалното училище за търговия и пътувания."
+      },
+      "mediaIds": [],
+      "sourceLinks": [],
+      "publicationStatus": "published"
+    },
+    {
+      "stableId": "action-2026-03-sucht-menschsein",
+      "title": {
+        "de": "Festival „Sucht & Menschsein“, Margareten",
+        "en": "“Sucht & Menschsein” festival, Margareten",
+        "bg": "Фестивал „Sucht & Menschsein“, Маргаретен"
+      },
+      "date": "2026-03",
+      "place": {
+        "de": "Margareten, Wien",
+        "en": "Margareten, Vienna",
+        "bg": "Маргаретен, Виена"
+      },
+      "status": "draft",
+      "summary": {
+        "de": "Interaktive Installation beim Festival „Sucht & Menschsein“ (Zugehörigkeit zum Äquatormaßband muss geprüft werden).",
+        "en": "Interactive installation at the “Sucht & Menschsein” festival (affiliation with the Äquatormaßband must be verified).",
+        "bg": "Интерактивна инсталация на фестивала „Sucht & Menschsein“ (принадлежността към Äquatormaßband подлежи на проверка)."
+      },
+      "mediaIds": [],
+      "sourceLinks": [],
+      "publicationStatus": "draft"
+    }
+  ],
+  "tbd": [
+    "action-2025-09-platz-menschenrechte: exact day of the September 2025 action is not verified (month-precision only).",
+    "action-2026-03-sucht-menschsein: affiliation with the Äquatormaßband is UNVERIFIED — kept as draft and excluded from published listings.",
+    "whatHappened / artisticRelevance / biancaRole / titaniaRole / participants / credits: no verified source text supplied."
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "$schemaNote": "Only media with consentStatus 'approved' may be rendered. 'pending' and 'internal-only' items must never reach HTML, client bundles, feeds, metadata, search indexes or public assets.",
+  "media": [],
+  "tbd": [
+    "No media files, creators, copyright holders or consent records have been supplied. The Türkenschanzpark action is described as filmed, but no rights-cleared asset or public URL is available."
+  ]
+}

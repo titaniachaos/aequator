@@ -1,0 +1,28 @@
+{
+  "$schemaNote": "German is the authentic primary source (Blueprint V5.0 §6). English and Bulgarian strings are machine-generated drafts and remain draft until reviewed.",
+  "translationReview": { "de": "verified", "en": "draft", "bg": "draft" },
+  "project": {
+    "title": {
+      "de": "Äquatormaßband × Titania Chaos",
+      "en": "Äquatormaßband × Titania Chaos",
+      "bg": "Äquatormaßband × Titania Chaos"
+    },
+    "shortTitle": "Äquatormaßband",
+    "oneSentence": {
+      "de": "Das Äquatormaßband ist ein von Bianca Trappl geschaffenes partizipatives Textilkunst- und Friedensprojekt, das Titania Chaos seit 2025 als Botschafterin und performative Kooperationspartnerin begleitet.",
+      "en": "The Äquatormaßband is a participatory textile art and peace project created by Bianca Trappl, accompanied since 2025 by Titania Chaos as ambassador and performative collaboration partner.",
+      "bg": "Äquatormaßband е партиципативен проект за текстилно изкуство и мир, създаден от Бианка Трапл, който от 2025 г. Titania Chaos съпровожда като посланик и перформативен партньор."
+    },
+    "creator": "Bianca Trappl",
+    "collaborator": "Titania Chaos",
+    "collaborationStartYear": 2025,
+    "targetMeasureKm": 40075,
+    "currentMeasureMeters": null,
+    "officialLinks": []
+  },
+  "tbd": [
+    "startYear of the Äquatormaßband project itself (not supplied in the source material).",
+    "currentMeasureMeters — no verified measurement supplied.",
+    "officialLinks — no verified public URLs supplied."
+  ]
+}
