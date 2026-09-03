@@ -1,5 +1,14 @@
 import { defineConfig, type DefaultTheme } from 'vitepress'
-import { BASE, HOSTNAME, LEGAL, MAIN_SITE, SAME_SITE, WRITTEN_HOST } from './seo.ts'
+import {
+  BASE,
+  HOSTNAME,
+  LEGAL,
+  MAIN_SITE,
+  SAME_SITE,
+  WRITTEN_HOST,
+  buildHead,
+  localeAlternateTags
+} from './seo.ts'
 
 /**
  * Standalone VitePress project, served from titaniachaos.com/aequator/ the way
@@ -84,6 +93,20 @@ export default defineConfig({
           .replace(' rel="noreferrer"', '')
       }
     }
+  },
+
+  // Canonical, hreflang alternates, Open Graph and the schema.org graph. Three
+  // locales without alternates read to a crawler as three competing pages
+  // rather than one page in three languages.
+  transformHead: (ctx) => buildHead(ctx, ctx.siteConfig),
+
+  transformHtml: (code, _id, ctx) => {
+    const tags = localeAlternateTags(ctx.page)
+    return tags ? code.replace('</head>', `${tags}</head>`) : code
+  },
+
+  sitemap: {
+    hostname: `${HOSTNAME}${BASE}`
   },
 
   locales: {

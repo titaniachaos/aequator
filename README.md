@@ -34,7 +34,8 @@ docs/
 ├── public/        approved static assets only
 └── .vitepress/
     ├── config.ts        base '/aequator/', three locales, cleanUrls
-    ├── seo.ts           BASE and HOSTNAME; an origin move is SITE_ORIGIN=…
+    ├── seo.ts           BASE and HOSTNAME, canonical, hreflang, OG and the
+    │                    schema.org graph; an origin move is SITE_ORIGIN=…
     ├── *.data.ts        build-time loaders — see "What the build refuses to publish"
     └── theme/           custom.css and the four components
 ```
