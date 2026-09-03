@@ -1,16 +1,17 @@
 ---
 title: Journal
-description: Fortlaufende Notizen und Bilder zum Äquatormaßband.
+description: Fortlaufende Notizen zum Äquatormaßband — in Vorbereitung.
 ---
 
 # Journal
 
-Bislang ist ein einziger freigegebener Beitrag erfasst.
+Diese Seite ist angelegt, aber noch nicht mit Inhalt gefüllt.
 
-<MediaFigure id="banana-encore" lang="de" />
+Das bislang einzige freigegebene Medienstück gehört zu einer erfassten Aktion und steht
+dort: [Wien, November 2025](./actions).
 
-## Offen
+Für ein fortlaufendes Journal — Notizen und Beobachtungen neben den Aktionen — liegt
+derzeit kein geprüfter und rechtlich freigegebener Quelltext vor. Bildmaterial erscheint
+erst, wenn die Einwilligung als `approved` erfasst ist.
 
-Weitere Notizen, Beobachtungen und Bilder aus den Aktionen liegen noch nicht in
-geprüfter und rechtlich freigegebener Form vor. Bildmaterial erscheint hier erst, wenn
-die Einwilligung als `approved` erfasst ist. **TBD.**
+**Status: TBD.**

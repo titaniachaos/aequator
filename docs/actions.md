@@ -18,8 +18,11 @@ listed.
 
 ## Open
 
-- For the action at Platz der Menschenrechte (September 2025) and for the
-  “Sucht &amp; Menschsein” festival (March 2026) only the month is verified, not the
-  exact day.
+- Three actions are verified to the month only, not the exact day: Platz der
+  Menschenrechte (September 2025), Vienna (November 2025) and the
+  “Sucht &amp; Menschsein” festival (March 2026).
+- For the November 2025 action the venue within Vienna is not recorded. Its title and
+  summary restate the caption and alt text published with the film, and claim nothing
+  beyond them.
 - What happened, artistic relevance, participants and credits for the individual actions
   do not yet exist in verified form. **TBD.**

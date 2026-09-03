@@ -146,6 +146,21 @@ for (const item of actions) {
   }
 }
 
+// The other direction: a frame that names an event must name a real one, and
+// the two files must agree about the pairing.
+const actionIds = new Set(actions.map((a) => a.stableId))
+for (const item of media) {
+  if (!item.eventId) continue
+  if (!actionIds.has(item.eventId)) {
+    fail('data/media.json', `${item.stableId} names unknown event ${item.eventId}`)
+    continue
+  }
+  const event = actions.find((a) => a.stableId === item.eventId)
+  if (!(event.mediaIds ?? []).includes(item.stableId)) {
+    fail('data/media.json', `${item.stableId} names ${item.eventId}, which does not list it back`)
+  }
+}
+
 // Blueprint section 5: these two dates are verified and must not drift.
 const VERIFIED_DATES = {
   'action-2025-10-tuerkenschanzpark': '2025-10-30',

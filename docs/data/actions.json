@@ -53,26 +53,30 @@
       "publicationStatus": "published"
     },
     {
-      "stableId": "action-2026-03-maerzpark",
+      "stableId": "action-2025-11-wien",
       "title": {
-        "de": "Märzpark, Wien",
-        "en": "Märzpark, Vienna",
-        "bg": "Мерцпарк, Виена"
+        "de": "Auftritt in Wien",
+        "en": "Performance in Vienna",
+        "bg": "Изява във Виена"
       },
-      "date": "2026-03-04",
+      "date": "2025-11",
       "place": {
-        "de": "Märzpark, Wien",
-        "en": "Märzpark, Vienna",
-        "bg": "Мерцпарк, Виена"
+        "de": "Wien",
+        "en": "Vienna",
+        "bg": "Виена"
       },
       "status": "published",
       "summary": {
-        "de": "Aktion gegenüber der Berufsschule für Handel und Reisen.",
-        "en": "Action opposite the Berufsschule für Handel und Reisen.",
-        "bg": "Акция срещу професионалното училище за търговия и пътувания."
+        "de": "Auftritt mit dem Äquatormaßband im Freien. Eine Banane kommt aus dem Publikum.",
+        "en": "A performance with the Äquatormaßband outdoors. A banana arrives from the audience.",
+        "bg": "Изява с Äquatormaßband на открито. Банан идва от публиката."
       },
-      "mediaIds": [],
-      "sourceLinks": [],
+      "mediaIds": [
+        "banana-encore"
+      ],
+      "sourceLinks": [
+        "https://www.youtube.com/watch?v=w3wkwyrTRiY"
+      ],
       "publicationStatus": "published"
     },
     {
@@ -97,11 +101,35 @@
       "mediaIds": [],
       "sourceLinks": [],
       "publicationStatus": "published"
+    },
+    {
+      "stableId": "action-2026-03-maerzpark",
+      "title": {
+        "de": "Märzpark, Wien",
+        "en": "Märzpark, Vienna",
+        "bg": "Мерцпарк, Виена"
+      },
+      "date": "2026-03-04",
+      "place": {
+        "de": "Märzpark, Wien",
+        "en": "Märzpark, Vienna",
+        "bg": "Мерцпарк, Виена"
+      },
+      "status": "published",
+      "summary": {
+        "de": "Aktion gegenüber der Berufsschule für Handel und Reisen.",
+        "en": "Action opposite the Berufsschule für Handel und Reisen.",
+        "bg": "Акция срещу професионалното училище за търговия и пътувания."
+      },
+      "mediaIds": [],
+      "sourceLinks": [],
+      "publicationStatus": "published"
     }
   ],
   "tbd": [
-    "action-2025-09-platz-menschenrechte: exact day of the September 2025 action is not verified (month-precision only).",
-    "action-2026-03-sucht-menschsein: exact day of the March 2026 action is not verified (month-precision only). Affiliation with the Äquatormaßband confirmed by the source 2026-09-03.",
-    "whatHappened / artisticRelevance / biancaRole / titaniaRole / participants / credits: no verified source text supplied."
+    "Exact day is not verified for three actions (month-precision only): action-2025-09-platz-menschenrechte, action-2025-11-wien, action-2026-03-sucht-menschsein.",
+    "action-2025-11-wien: the venue within Vienna is not recorded. Its title and summary restate the verified caption and alt text of banana-encore, published at https://titaniachaos.com/media.json — nothing beyond that is claimed.",
+    "action-2026-03-sucht-menschsein: affiliation with the Äquatormaßband confirmed by the source 2026-09-03.",
+    "whatHappened / artisticRelevance / biancaRole / titaniaRole / participants / credits: no verified source text supplied for any action."
   ]
 }

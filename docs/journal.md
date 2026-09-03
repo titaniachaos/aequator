@@ -1,18 +1,19 @@
 ---
 title: Journal
-description: Ongoing notes and images from the Äquatormaßband.
+description: Ongoing notes from the Äquatormaßband — in preparation.
 ---
 
 # Journal
 
-One cleared entry is recorded so far.
-
 <DraftTranslation lang="en" />
 
-<MediaFigure id="banana-encore" lang="en" />
+This page exists but has no content yet.
 
-## Open
+The one cleared piece of media belongs to a recorded action and sits there:
+[Vienna, November 2025](./actions).
 
-Further notes, observations and images from the actions do not yet exist in verified and
-rights-cleared form. Images appear here only once their consent is recorded as
-`approved`. **TBD.**
+No verified and rights-cleared source text is currently available for an ongoing journal
+of notes and observations alongside the actions. Images appear only once their consent is
+recorded as `approved`.
+
+**Status: TBD.**

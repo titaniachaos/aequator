@@ -87,12 +87,12 @@ or a copyright holder, and alt text or a caption, before it will let one through
 
 Recorded in the `tbd` arrays of the data files and on the pages themselves:
 
-- The exact day is not verified for two actions: Platz der Menschenrechte (September 2025)
-  and the "Sucht & Menschsein" festival (March 2026). Both are month-precision.
-- The four recorded actions still have no media of their own. Türkenschanzpark is described
+- The exact day is not verified for three actions: Platz der Menschenrechte (September 2025),
+  Vienna (November 2025) and the "Sucht & Menschsein" festival (March 2026).
+- Four of the five recorded actions still have no media of their own. Türkenschanzpark is described
   as filmed, but no rights-cleared footage of it is published on the main site.
-- `banana-encore` is dated November 2025 and belongs to no recorded action, so it carries no
-  `eventId`. Whether a November 2025 action should be recorded is unverified.
+- `action-2025-11-wien` has no recorded venue within Vienna. Its title and summary restate
+  the published caption and alt text of `banana-encore` and claim nothing beyond them.
 - Photographers are credited as one notice for the whole archive, not per frame, so there is
   no per-image attribution.
 - No public verified source URLs exist yet for the project or any action.

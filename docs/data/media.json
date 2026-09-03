@@ -28,13 +28,13 @@
         "de": "Die Banane kommt aus dem Publikum, mitten im Auftritt mit der Äquatormassband. Wien, November 2025.",
         "en": "The banana arrives from the audience, mid-performance with Äquatormassband. Vienna, November 2025.",
         "bg": "Бананът идва от публиката, по време на представление с Äquatormassband. Виена, ноември 2025."
-      }
+      },
+      "eventId": "action-2025-11-wien"
     }
   ],
   "tbd": [
     "banana-encore has no per-frame creator: the main site records photographers as one rights line for the whole archive, not per image. copyrightHolder is taken from that line.",
-    "banana-encore is dated November 2025 and belongs to no recorded action, so it carries no eventId. Whether a November 2025 action should be recorded is unverified.",
-    "The four recorded actions have no media of their own. The Türkenschanzpark action is described as filmed, but no rights-cleared footage of it is published at https://titaniachaos.com/media.json"
+    "The other four recorded actions have no media. The Türkenschanzpark action is described as filmed, but no rights-cleared footage of it is published at https://titaniachaos.com/media.json"
   ],
   "rights": "© Tatiana Petkova (Titania Chaos). Photographs by Veliko Balabanov, Marine Hink, Heidi Holtl, Geo Kalev, Tanya Matskevich, Konstantin Oberlik, Tatiana Petkova, Marion Scholz and Laurent Ziegler. Recorded verbatim from https://titaniachaos.com/media.json"
 }
