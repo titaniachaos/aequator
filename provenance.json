@@ -1,5 +1,5 @@
 {
-  "note": "What each stated fact rests on, and whether anyone can check it. Kept at the repository root rather than under docs/ because it is a development record, not site content. A gate that names an arbiter nobody can check is a preferred opinion with a gate around it; this file is where that distinction is written down instead of assumed.",
+  "note": "What each stated fact rests on, and whether anyone can check it. Kept at the repository root rather than under docs/ because it is a development record, not site content. A gate that names an arbiter nobody can check is a preferred opinion with a gate around it; this file is where that distinction is written down instead of assumed. That framing is not original here: it arrived in a cross-repo review on 2026-09-03, from the uuidna project's session, and it is what showed this repository's first arbiter to be a nominated file rather than a checkable source. Recorded because a file about provenance should carry its own.",
   "checkableMeanings": {
     "live": "fetched and compared by a script; the arbiter answers for itself",
     "fingerprint": "the source is identified by hash, so two people can confirm they hold the same document — its contents are still taken on trust",

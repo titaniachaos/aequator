@@ -100,9 +100,10 @@ markdown that types it again.
 The floor in that script is the number of places still saying a fact out loud. Lower it
 deliberately; raising it should take an argument.
 
-An arbiter nobody can check is a preferred opinion with a gate around it, so
-`provenance.json` records what each stated fact actually rests on and how far it can be
-verified: `live` (a script fetches it), `fingerprint` (a document identified by hash —
+An arbiter nobody can check is a preferred opinion with a gate around it — a formulation
+borrowed from a cross-repo review rather than arrived at here, and the thing that showed
+this repository's first arbiter to be a nominated file. So `provenance.json` records what
+each stated fact actually rests on and how far it can be verified: `live` (a script fetches it), `fingerprint` (a document identified by hash —
 two people can confirm they hold the same one, its contents are still trust), `public` (a
 published constant), or `none` (the project owner said so). Two of the four authorities
 here are checkable; the two that carry the German source text and the pinned dates are
