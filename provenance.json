@@ -51,6 +51,25 @@
       "authorises": [
         "docs/data/project.json: targetMeasureKm"
       ]
+    },
+    {
+      "id": "youtube-upload-dates",
+      "kind": "live-endpoint",
+      "url": "https://www.youtube.com/watch?v=<id>",
+      "checkable": "live",
+      "checkedBy": "scripts/check-origin.mjs",
+      "authorises": [
+        "docs/data/media.json: that a film paired to an action was not uploaded before that action could have happened"
+      ]
+    },
+    {
+      "id": "owner-statement-2026-09-04-films",
+      "kind": "statement",
+      "checkable": "none",
+      "authorises": [
+        "docs/data/media.json: consentStatus 'approved' for the five YouTube films",
+        "docs/data/media.json: creator 'Krasimir Stoichkov', who is not among the photographers the main site's rights notice names"
+      ]
     }
   ]
 }

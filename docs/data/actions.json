@@ -138,6 +138,7 @@
     "Exact day is not verified for three actions (month-precision only): action-2025-09-platz-menschenrechte, action-2025-11-wien, action-2026-03-sucht-menschsein.",
     "action-2025-11-wien: the venue within Vienna is not recorded. Its title and summary restate the verified caption and alt text of banana-encore, published at https://titaniachaos.com/media.json — nothing beyond that is claimed.",
     "action-2026-03-sucht-menschsein: affiliation with the Äquatormaßband confirmed by the source 2026-09-03.",
-    "whatHappened / artisticRelevance / biancaRole / titaniaRole / participants / credits: no verified source text supplied for any action."
+    "whatHappened / artisticRelevance / biancaRole / titaniaRole / participants / credits: no verified source text supplied for any action.",
+    "CONFLICT, unresolved, needs the source: action-2025-10-tuerkenschanzpark is pinned to 2025-10-30 (blueprint), but the film paired to it (youtube-tuerkenschanzpark-2025) is titled \"...im Türkenschanzpark, Wien, 15.10.2025\" and was uploaded 2025-10-16 -- a fortnight before the pinned date. A film cannot document an event it predates. Either the action happened on 15.10.2025 and the pin is wrong, or the film is of a different Türkenschanzpark occasion and the pairing is wrong. Nothing has been changed to make the checks pass: scripts/check-origin.mjs fires on the pinned date and scripts/validate-data.mjs fires on the film's date."
   ]
 }

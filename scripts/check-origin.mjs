@@ -17,6 +17,7 @@ import { fileURLToPath } from 'node:url'
 const ROOT = fileURLToPath(new URL('..', import.meta.url))
 const read = (f) => readFileSync(ROOT + f, 'utf8')
 const local = JSON.parse(read('docs/data/media.json'))
+const actions = JSON.parse(read('docs/data/actions.json')).actions
 
 const ORIGIN = process.env.SITE_ORIGIN ?? 'https://titaniachaos.com'
 const problems = []
@@ -75,9 +76,69 @@ if (url) {
   }
 }
 
+/* -- films hosted elsewhere answer to wherever they are hosted ------------ */
+
+/**
+ * A YouTube film is not in the main site's index and cannot be, so the loop
+ * above exempts it. Exempt is not the same as unchecked: its arbiter is YouTube,
+ * which publishes an upload date, and a recording of an event cannot have been
+ * uploaded before the event happened. That is the one thing about these films
+ * this repository can check rather than assert.
+ *
+ * A page that cannot be read or parsed is reported, not failed: the check should
+ * not go red because a scrape broke.
+ */
+const notes = []
+for (const item of local.media) {
+  if (item.type !== 'youtube' || !item.eventId) continue
+  const event = actions.find((a) => a.stableId === item.eventId)
+  if (!event) continue
+
+  let page
+  try {
+    const r = await fetch(item.sourceUrl, { headers: { 'user-agent': 'aequator-check-origin' } })
+    page = r.ok ? await r.text() : null
+  } catch {
+    page = null
+  }
+  if (!page) {
+    notes.push(`${item.stableId}: could not read ${item.sourceUrl}`)
+    continue
+  }
+
+  const uploaded = /"uploadDate":"(\d{4}-\d{2}-\d{2})/.exec(page)?.[1]
+  const title = /<meta name="title" content="([^"]*)"/.exec(page)?.[1]
+  if (!uploaded) {
+    notes.push(`${item.stableId}: no upload date published`)
+    continue
+  }
+
+  // A month-precision action could have happened on any day of that month, so
+  // compare against the earliest day it could be -- the check must only fire on
+  // an impossibility, never on a maybe.
+  const earliest = event.date.length === 7 ? `${event.date}-01` : event.date
+  if (uploaded < earliest) {
+    problems.push(
+      `${item.stableId} was uploaded ${uploaded}, before ${event.stableId} could have happened ` +
+        `(${event.date}). A film cannot document an event it predates -- either the action's date ` +
+        `is wrong or the film belongs to a different occasion.` +
+        (title ? ` The film calls itself: "${title}"` : '')
+    )
+  }
+}
+
+if (notes.length) {
+  console.warn('Could not check everything:')
+  for (const n of notes) console.warn(`  - ${n}`)
+}
+
 if (problems.length) {
   console.error(`Disagrees with ${ORIGIN}:\n`)
   for (const p of problems) console.error(`  - ${p}`)
   process.exit(1)
 }
-console.log(`Agrees with ${ORIGIN}: rights notice, ${borrowed.length} borrowed frame(s), card image ${stated.w}x${stated.h}.`)
+const paired = local.media.filter((m) => m.type === 'youtube' && m.eventId).length
+console.log(
+  `Agrees with ${ORIGIN}: rights notice, ${borrowed.length} borrowed frame(s), ` +
+    `card image ${stated.w}x${stated.h}; ${paired} paired film(s) not older than their action.`
+)
