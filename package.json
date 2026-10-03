@@ -6,16 +6,17 @@
   "engines": {
     "node": "26.x"
   },
-  "description": "Äquatormaßband × Titania Chaos — participatory textile art and peace project, served at titaniachaos.com/aequator/.",
+  "description": "\u00c4quatorma\u00dfband \u00d7 Titania Chaos \u2014 participatory textile art and peace project, served at titaniachaos.com/aequator/.",
   "scripts": {
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs",
     "validate:data": "node scripts/validate-data.mjs",
     "typecheck": "vue-tsc --noEmit -p tsconfig.json",
-    "check": "npm run validate:data && npm run check:claims && npm run typecheck && npm run docs:build",
+    "check": "npm run check:navigation && npm run validate:data && npm run check:claims && npm run typecheck && npm run docs:build",
     "check:claims": "node scripts/check-claims.mjs",
-    "check:origin": "node scripts/check-origin.mjs"
+    "check:origin": "node scripts/check-origin.mjs",
+    "check:navigation": "node --test scripts/lib/site-navigation.test.mjs"
   },
   "keywords": [],
   "author": "",

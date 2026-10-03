@@ -7,10 +7,14 @@ import MediaRights from './components/MediaRights.vue'
 import RoleBlock from './components/RoleBlock.vue'
 import DraftTranslation from './DraftTranslation.vue'
 import './custom.css'
+import { installSiteNavigation } from './site-navigation.mjs'
 
 export default {
   extends: DefaultTheme,
-  enhanceApp({ app }) {
+  enhanceApp({ app, router, siteData }) {
+    if (typeof window !== 'undefined') {
+      installSiteNavigation(router, siteData.value.base, window.location)
+    }
     // Registered globally because every call site is Markdown.
     app.component('AequatorHero', AequatorHero)
     app.component('ActionCard', ActionCard)

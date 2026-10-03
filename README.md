@@ -131,3 +131,13 @@ Recorded in the `tbd` arrays of the data files and on the pages themselves:
 - No public verified source URLs exist yet for the project or any action.
 - The project's own start year and its current measured length are not recorded.
 - Learning and Journal are routed and translated but have no verified content.
+
+## Navigation between project sites
+
+The main site, `/clown/` and `/aequator/` are independent builds on one host.
+The theme's `site-navigation.mjs` guards VitePress route changes: crossing a
+site root loads the destination document in the same tab; routes within a site
+keep VitePress navigation. Queries, language paths and anchors are preserved.
+Keep this module identical in all three repositories and add any future site
+root to `SITE_ROOTS` in each copy. `npm run check:navigation` verifies the rule
+and runs as part of the existing checks.

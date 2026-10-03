@@ -37,6 +37,9 @@ jobs:
       # Schema validation of the project data, plus the scan that keeps internal
       # Drive URLs, private document ids and contact details out of the build.
       # It gates the deploy, so a change that breaks it is never published.
+      - name: Check navigation between sites
+        run: npm run check:navigation
+
       - name: Validate the project data
         run: npm run validate:data
 
