@@ -24,7 +24,7 @@
   "devDependencies": {
     "@types/node": "^26.4.1",
     "typescript": "^6.0.3",
-    "vitepress": "2.0.0-alpha.19",
+    "vitepress": "2.0.0-alpha.20",
     "vue-tsc": "^3.3.11",
     "zod": "^4.5.4"
   }
