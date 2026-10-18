@@ -163,11 +163,13 @@ Märzpark, Türkenschanzpark, Platz der Menschenrechte: Das Äquatormaßband war
 
 ## Bianca Trappl × Titania Chaos
 
-Bianca Trappl hat das Äquatormaßband ins Leben gerufen und leitet das Projekt künstlerisch. Als Textilkünstlerin verbindet sie die Arbeit mit Stoffen mit ihrem Interesse an Menschen und ihren Geschichten.
+Bianca Trappl ist Damenkleidermachermeisterin und Textilkünstlerin. Nach ihrer Meisterprüfung 2008 arbeitete sie im gehobenen Modesegment als Schnittzeichnerin und Assistentin der Geschäftsführung. Ihre künstlerische Arbeit verbindet textile Handwerkskunst mit Fragen des menschlichen Zusammenlebens.
 
-Seit 2025 ist Titania Chaos als Clownin und performative Kooperationspartnerin dabei. Mit Improvisation, körperlichem Spiel und Neugier bringt sie ihre eigene künstlerische Sprache in das Projekt ein.
+Das Äquatormaßband ist ihre Idee. Nach ersten künstlerischen Arbeiten mit Textilien wurde das Projekt 2023 im Therapiezentrum Gersthof wiederbelebt. Seither war es unter anderem in der Galerie Atlas, beim Festival „Sucht und Menschsein“ und bei der Kunstgebung in Wien zu erleben. Seit Februar 2025 beteiligt sich Bianca außerdem am Deep-Listening-Prozess in der Wiener Brunnenpassage.
 
-Beide verbindet die Überzeugung, dass Frieden auch im Kleinen beginnt: mit der Bereitschaft, einander zuzuhören, Unterschiede auszuhalten und andere Sichtweisen zu verstehen. Das Äquatormaßband schafft dafür Raum – ohne vorauszusetzen, dass alle einer Meinung sein müssen.
+Seit 2025 begleitet Titania Chaos das Äquatormaßband als Clownin und Performancekünstlerin. Mit Improvisation, körperlichem Spiel und ihrer Neugier auf Menschen eröffnet sie neue Möglichkeiten der Begegnung – gerade dort, wo Sprache allein nicht ausreicht.
+
+Beide verbindet die Überzeugung, dass Frieden auch im Kleinen beginnt: mit der Bereitschaft, einander zuzuhören, Unterschiede auszuhalten und andere Sichtweisen zu verstehen. Das Äquatormaßband schafft dafür Raum, ohne vorauszusetzen, dass alle einer Meinung sein müssen.
 
 [Mehr über das Äquatormaßband erfahren ↗](https://www.das-interessante.at/aequator/){.aequator-external}
 

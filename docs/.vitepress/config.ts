@@ -143,7 +143,8 @@ export default defineConfig({
           { text: 'Mitmachen', link: '/de/#dein-stoff-deine-geschichte' },
           { text: 'Geschichte', link: '/de/#von-der-wespentaille-zum-aquator' },
           { text: 'Aktionen', link: '/de/#das-band-wachst-weiter' },
-          { text: 'Über uns', link: '/de/#bianca-trappl-×-titania-chaos' }
+          { text: 'Über uns', link: '/de/#bianca-trappl-×-titania-chaos' },
+          { text: 'Titania Chaos', link: MAIN_SITE('/de'), ...SAME_SITE }
         ],
         sidebar: sidebar('/de', 'Äquatormaßband', 1),
         outline: { level: [2, 3], label: 'Auf dieser Seite' },
