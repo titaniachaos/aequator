@@ -152,14 +152,17 @@ export function buildHead(ctx: TransformContext, siteConfig: SiteConfig): HeadCo
   const alternates = existingAlternates(slug, siteConfig.pages)
   const title = ctx.pageData.title || ctx.title
   const description = ctx.description || ctx.siteData.description
-  const germanHome = ctx.page === 'de/index.md'
-  const image = germanHome
+  const projectHome = ['index.md', 'de/index.md', 'bg/index.md'].includes(ctx.page)
+  const image = projectHome
     ? `${HOSTNAME}${BASE}images/aequator-titania-chaos-tuerkenschanzpark-2025-10-30.webp`
     : OG_IMAGE
-  const imageSize = germanHome ? { w: 720, h: 991 } : OG_IMAGE_SIZE
-  const imageAlt = germanHome
-    ? 'Titania Chaos mit roter Clownnase und braunem Mantel neben einer Frau mit gelber Fahne; das Stoffband liegt im Kreis um beide.'
-    : OG_IMAGE_SIZE.alt
+  const imageSize = projectHome ? { w: 720, h: 991 } : OG_IMAGE_SIZE
+  const homeImageAlt = {
+    en: 'Titania Chaos, wearing a red clown nose and a brown coat, stands beside a woman holding a yellow flag; the fabric ribbon forms a circle around them.',
+    de: 'Titania Chaos mit roter Clownnase und braunem Mantel neben einer Frau mit gelber Fahne; das Stoffband liegt im Kreis um beide.',
+    bg: 'Титания Хаос с червен клоунски нос и кафяво палто до жена с жълто знаме; платнената лента образува кръг около двете.'
+  }
+  const imageAlt = projectHome ? homeImageAlt[locale.lang] : OG_IMAGE_SIZE.alt
 
   const head: HeadConfig[] = [
     ['link', { rel: 'canonical', href: canonical }],

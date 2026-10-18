@@ -114,7 +114,14 @@ export default defineConfig({
       label: 'English',
       lang: 'en',
       themeConfig: {
-        nav: nav('', 0, 'Titania Chaos'),
+        nav: [
+          { text: 'Äquatormaßband', link: '/#das-aquatormaßband' },
+          { text: 'Take part', link: '/#dein-stoff-deine-geschichte' },
+          { text: 'How it began', link: '/#von-der-wespentaille-zum-aquator' },
+          { text: 'Activities', link: '/#das-band-wachst-weiter' },
+          { text: 'About us', link: '/#bianca-trappl-×-titania-chaos' },
+          { text: 'Titania Chaos', link: MAIN_SITE(''), ...SAME_SITE }
+        ],
         sidebar: sidebar('', 'Äquatormaßband', 0),
         outline: { level: [2, 3], label: 'On this page' },
         docFooter: { prev: 'Previous page', next: 'Next page' },
@@ -172,12 +179,19 @@ export default defineConfig({
     bg: {
       label: 'Български',
       lang: 'bg',
-      title: 'Екваторна ролетка × Titania Chaos',
+      title: 'Екваторната лента × Titania Chaos',
       titleTemplate: ':title | Äquatormaßband',
       description:
         'Партиципативен проект за текстилно изкуство и мир на Бианка Трапл, съпровождан от 2025 г. от Titania Chaos.',
       themeConfig: {
-        nav: nav('/bg', 2, 'Титания Хаос'),
+        nav: [
+          { text: 'Екваторната лента', link: '/bg/#das-aquatormaßband' },
+          { text: 'Включи се', link: '/bg/#dein-stoff-deine-geschichte' },
+          { text: 'Как започна всичко', link: '/bg/#von-der-wespentaille-zum-aquator' },
+          { text: 'Прояви', link: '/bg/#das-band-wachst-weiter' },
+          { text: 'За нас', link: '/bg/#bianca-trappl-×-titania-chaos' },
+          { text: 'Titania Chaos', link: MAIN_SITE('/bg'), ...SAME_SITE }
+        ],
         sidebar: sidebar('/bg', 'Äquatormaßband', 2),
         outline: { level: [2, 3], label: 'На тази страница' },
         docFooter: { prev: 'Предишна страница', next: 'Следваща страница' },
@@ -186,11 +200,11 @@ export default defineConfig({
           copyright: '© 2026 Бианка Трапл · Титания Хаос'
         },
         darkModeSwitchLabel: 'Изглед',
-        lightModeSwitchTitle: 'Към светлата тема',
-        darkModeSwitchTitle: 'Към тъмната тема',
+        lightModeSwitchTitle: 'Включи светлата тема',
+        darkModeSwitchTitle: 'Включи тъмната тема',
         sidebarMenuLabel: 'Меню',
         returnToTopLabel: 'Към началото',
-        langMenuLabel: 'Смяна на езика',
+        langMenuLabel: 'Смени езика',
         skipToContentLabel: 'Към съдържанието',
         notFound: {
           title: 'СТРАНИЦАТА НЕ Е НАМЕРЕНА',
