@@ -171,3 +171,200 @@ body {
   line-height: 1.6;
   color: var(--vp-c-text-2);
 }
+
+/* The German project home inherits the existing brand and navigation. All
+   editorial layout rules stay on this page, including the media overrides. */
+.Layout.aequator-phase-one .VPDoc:not(.has-sidebar) .container { max-width: 1120px; }
+.Layout.aequator-phase-one .VPDoc:not(.has-sidebar) .content { max-width: none; width: 100%; }
+.aequator-phase-one .VPDoc .content-container { max-width: none; }
+.aequator-phase-one .VPNavBarTitle .title { letter-spacing: -0.025em; }
+.aequator-phase-one .VPNavBarMenuLink { font-weight: 600; }
+.aequator-phase-one .VPLocalNav { display: none; }
+.aequator-phase-one .VPDoc { padding-top: clamp(2.5rem, 6vw, 5rem); }
+.aequator-phase-one .aequator-project { font-size: 16px; line-height: 1.75; }
+.aequator-phase-one .aequator-project p { line-height: 1.75; text-wrap: pretty; }
+.aequator-phase-one .aequator-project h1,
+.aequator-phase-one .aequator-project h2,
+.aequator-phase-one .aequator-project h3 { text-wrap: balance; }
+.aequator-phase-one .aequator-project h1 {
+  max-width: 17ch;
+  margin: 0 0 1.25rem;
+  color: var(--vp-c-brand-1);
+  font-size: clamp(2.15rem, 4.2vw, 3rem);
+  line-height: 1.08;
+  letter-spacing: -0.035em;
+}
+.aequator-phase-one .aequator-project h2 {
+  margin: clamp(3.25rem, 6vw, 5rem) 0 1.4rem;
+  padding: 0;
+  border: 0;
+  font-size: clamp(1.65rem, 3vw, 2rem);
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+}
+.aequator-phase-one .aequator-project h3 {
+  margin: 2rem 0 0.85rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--vp-c-divider);
+  font-size: 1.25rem;
+  line-height: 1.3;
+  letter-spacing: -0.015em;
+}
+.aequator-phase-one .aequator-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: clamp(2rem, 5vw, 4rem);
+  align-items: center;
+  margin-bottom: clamp(2.5rem, 5vw, 4rem);
+}
+.aequator-phase-one .aequator-intro .aequator-lead {
+  max-width: 34ch;
+  margin: 0 0 1.5rem;
+  font-size: 1.25rem;
+  line-height: 1.55;
+  color: var(--vp-c-text-2);
+}
+.aequator-phase-one .aequator-intro .media-figure { margin: 0; }
+.aequator-phase-one .aequator-intro .aequator-intro__photo {
+  width: 100%;
+  max-width: 360px;
+  justify-self: end;
+}
+.aequator-phase-one .aequator-reading { max-width: 70ch; margin: 0 auto; }
+.aequator-phase-one .aequator-reading > p { margin: 1.25rem 0; }
+.aequator-phase-one .aequator-current {
+  margin: 3rem 0 0;
+  padding: 1.5rem 0;
+  border-block: 1px solid var(--vp-c-divider);
+}
+.aequator-phase-one .aequator-current h2 {
+  margin: 0 0 1.25rem;
+  color: var(--vp-c-text-2);
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+.aequator-phase-one .aequator-current h3 {
+  margin: 0 0 0.75rem;
+  padding: 0;
+  border: 0;
+  font-size: 1.25rem;
+}
+.aequator-phase-one .aequator-current p { margin: 0.75rem 0 0; }
+.aequator-phase-one .aequator-current .aequator-current__date {
+  margin: 0 0 0.5rem;
+  color: var(--vp-c-text-2);
+  font-size: 13px;
+}
+.aequator-phase-one .aequator-current .aequator-current__review {
+  color: var(--vp-c-text-2);
+  font-size: 13px;
+}
+.aequator-phase-one .aequator-current article + article {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--vp-c-divider);
+}
+.aequator-phase-one .aequator-reading .media-figure {
+  width: 100%;
+  max-width: 520px;
+  margin: 2.25rem auto;
+}
+.aequator-phase-one .media-figure img,
+.aequator-phase-one .media-figure video {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 18px;
+  object-fit: contain;
+}
+.aequator-phase-one .media-figure figcaption { font-size: 13px; line-height: 1.55; }
+.aequator-phase-one .aequator-reading > p,
+.aequator-phase-one .aequator-intro__copy > p {
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphenate-limit-chars: 8 4 4;
+}
+.aequator-phase-one .vp-doc a { text-underline-offset: 0.18em; }
+.aequator-phase-one .vp-doc a.aequator-external::after { display: none; }
+.aequator-phase-one .vp-doc a.aequator-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  max-width: 100%;
+  padding: 0.8rem 1.25rem;
+  border-radius: 999px;
+  background: var(--vp-c-brand-3);
+  color: #fff;
+  font-weight: 600;
+  line-height: 1.45;
+  text-align: center;
+  text-decoration: none;
+  hyphens: none;
+}
+.aequator-phase-one .vp-doc a.aequator-button:hover { background: #b91839; }
+.aequator-phase-one .aequator-films {
+  margin: 2rem 0 0;
+  padding: 1.1rem 0;
+  border-block: 1px solid var(--vp-c-divider);
+}
+.aequator-phase-one .aequator-films summary {
+  min-height: 28px;
+  color: var(--vp-c-brand-1);
+  font-weight: 600;
+  cursor: pointer;
+}
+.aequator-phase-one .aequator-films .media-figure video { max-height: 540px; }
+.aequator-phase-one .aequator-project :is(a, summary):focus-visible {
+  outline: 2px solid var(--vp-c-brand-1);
+  outline-offset: 5px;
+}
+.aequator-phase-one .aequator-anchor { display: block; scroll-margin-top: 100px; }
+.aequator-phase-one .vp-doc .header-anchor { margin-left: -0.65em; }
+.aequator-phase-one .vp-doc h2 .header-anchor { top: 0; }
+.aequator-phase-one .vp-doc h3 .header-anchor { top: 1.5rem; }
+
+/* Reuse the theme's mobile menu on tablets, with the same five anchors. */
+@media (max-width: 960px) {
+  .aequator-phase-one .VPNavBarMenu,
+  .aequator-phase-one .VPNavBarTranslations,
+  .aequator-phase-one .VPNavBarAppearance,
+  .aequator-phase-one .VPNavBarExtra { display: none; }
+  .aequator-phase-one .VPNavBarHamburger { display: flex; }
+  .aequator-phase-one .VPNavScreen { display: block; }
+}
+
+@media (max-width: 960px) {
+  .aequator-phase-one .aequator-intro { grid-template-columns: 1fr; gap: 1.75rem; }
+  .aequator-phase-one .aequator-intro .media-figure { width: 100%; max-width: 520px; margin-inline: auto; }
+  .aequator-phase-one .aequator-intro .aequator-lead { max-width: none; }
+  .aequator-phase-one .VPDoc { padding-inline: 24px; }
+}
+@media (max-width: 380px) {
+  .aequator-phase-one .VPDoc { padding-inline: 20px; }
+  .aequator-phase-one .VPNavBarTitle .title { font-size: 14px; }
+  .aequator-phase-one .aequator-project h1 { font-size: 1.85rem; }
+}
+
+.aequator-phase-one .vp-doc .aequator-support {
+  margin-top: 3rem;
+  padding: 1.5rem;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 12px;
+  background: var(--vp-c-bg-soft);
+  font-size: 0.875rem;
+  color: var(--vp-c-text-2);
+}
+.aequator-phase-one .vp-doc .aequator-support p { margin: 0 0 0.75rem; }
+.aequator-phase-one .vp-doc .aequator-support .aequator-support__title {
+  color: var(--vp-c-text-1);
+  font-size: 1rem;
+  font-weight: 600;
+}
+.aequator-phase-one .aequator-support__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+}

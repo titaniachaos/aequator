@@ -138,7 +138,13 @@ export default defineConfig({
       description:
         'Partizipatives Textilkunst- und Friedensprojekt von Bianca Trappl, seit 2025 begleitet von Titania Chaos.',
       themeConfig: {
-        nav: nav('/de', 1, 'Titania Chaos'),
+        nav: [
+          { text: 'Äquatormaßband', link: '/de/#das-aquatormaßband' },
+          { text: 'Mitmachen', link: '/de/#dein-stoff-deine-geschichte' },
+          { text: 'Geschichte', link: '/de/#von-der-wespentaille-zum-aquator' },
+          { text: 'Aktionen', link: '/de/#das-band-wachst-weiter' },
+          { text: 'Über uns', link: '/de/#bianca-trappl-×-titania-chaos' }
+        ],
         sidebar: sidebar('/de', 'Äquatormaßband', 1),
         outline: { level: [2, 3], label: 'Auf dieser Seite' },
         docFooter: { prev: 'Vorherige Seite', next: 'Nächste Seite' },

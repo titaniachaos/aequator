@@ -152,6 +152,14 @@ export function buildHead(ctx: TransformContext, siteConfig: SiteConfig): HeadCo
   const alternates = existingAlternates(slug, siteConfig.pages)
   const title = ctx.pageData.title || ctx.title
   const description = ctx.description || ctx.siteData.description
+  const germanHome = ctx.page === 'de/index.md'
+  const image = germanHome
+    ? `${HOSTNAME}${BASE}images/aequator-titania-chaos-tuerkenschanzpark-2025-10-30.webp`
+    : OG_IMAGE
+  const imageSize = germanHome ? { w: 720, h: 991 } : OG_IMAGE_SIZE
+  const imageAlt = germanHome
+    ? 'Titania Chaos mit roter Clownnase und braunem Mantel neben einer Frau mit gelber Fahne; das Stoffband liegt im Kreis um beide.'
+    : OG_IMAGE_SIZE.alt
 
   const head: HeadConfig[] = [
     ['link', { rel: 'canonical', href: canonical }],
@@ -162,16 +170,16 @@ export function buildHead(ctx: TransformContext, siteConfig: SiteConfig): HeadCo
     ['meta', { property: 'og:description', content: description }],
     ['meta', { property: 'og:url', content: canonical }],
     ['meta', { property: 'og:locale', content: locale.ogLocale }],
-    ['meta', { property: 'og:image', content: OG_IMAGE }],
-    ['meta', { property: 'og:image:width', content: String(OG_IMAGE_SIZE.w) }],
-    ['meta', { property: 'og:image:height', content: String(OG_IMAGE_SIZE.h) }],
-    ['meta', { property: 'og:image:alt', content: OG_IMAGE_SIZE.alt }],
+    ['meta', { property: 'og:image', content: image }],
+    ['meta', { property: 'og:image:width', content: String(imageSize.w) }],
+    ['meta', { property: 'og:image:height', content: String(imageSize.h) }],
+    ['meta', { property: 'og:image:alt', content: imageAlt }],
 
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
     ['meta', { name: 'twitter:title', content: title }],
     ['meta', { name: 'twitter:description', content: description }],
-    ['meta', { name: 'twitter:image', content: OG_IMAGE }],
-    ['meta', { name: 'twitter:image:alt', content: OG_IMAGE_SIZE.alt }]
+    ['meta', { name: 'twitter:image', content: image }],
+    ['meta', { name: 'twitter:image:alt', content: imageAlt }]
   ]
 
   for (const alt of alternates) {

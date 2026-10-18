@@ -11,7 +11,15 @@ import { t } from '../localized.ts'
  * id that is pending or internal-only simply resolves to nothing and the
  * component renders nothing -- it cannot leak into the HTML by mistake.
  */
-const props = defineProps<{ id: string; lang?: Language }>()
+const props = defineProps<{
+  id: string
+  lang?: Language
+  presentation?: 'poster'
+  priority?: boolean
+  playsinline?: boolean
+  width?: number
+  height?: number
+}>()
 
 const lang = computed<Language>(() => props.lang ?? 'en')
 const item = computed(() => data.byId[props.id])
@@ -43,17 +51,22 @@ const credit = computed(() => {
 <template>
   <figure v-if="item" class="media-figure">
     <img
-      v-if="item.type === 'image'"
-      :src="src"
+      v-if="item.type === 'image' || (presentation === 'poster' && item.posterUrl)"
+      :src="presentation === 'poster' ? item.posterUrl : src"
       :alt="alt"
       :style="item.aspectRatio ? { aspectRatio: item.aspectRatio } : undefined"
-      loading="lazy"
+      :width="width"
+      :height="height"
+      :loading="priority ? 'eager' : 'lazy'"
+      :fetchpriority="priority ? 'high' : undefined"
       decoding="async"
     />
     <video
       v-else-if="item.type === 'video_file'"
       :src="src"
       :poster="item.posterUrl"
+      :playsinline="playsinline || undefined"
+      :aria-label="playsinline ? alt : undefined"
       controls
       preload="none"
     />
