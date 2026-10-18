@@ -1,0 +1,137 @@
+{
+  "note": "Exact source/translation pairs for the EN/BG captions and alt texts editorially approved by the project owner on 18 October 2026. Source or translation changes require renewed review. No rights or URL exceptions.",
+  "translations": {
+    "aequator-stage-monologue": {
+      "caption": {
+        "en": [
+          "An indoor scene from Äquatormassband.",
+          "An indoor scene from the Äquatormaßband."
+        ],
+        "bg": [
+          "Сцена на закрито от Äquatormassband.",
+          "Сцена от представление на Екваторната лента на закрито."
+        ]
+      },
+      "alt text": {
+        "en": [
+          "Titania Chaos speaks into a handheld microphone during an indoor performance",
+          "Titania Chaos speaks into a handheld microphone during an indoor performance."
+        ],
+        "bg": [
+          "Титания Хаос говори с ръчен микрофон по време на представление на закрито",
+          "Титания Хаос говори с микрофон в ръка по време на представление на закрито."
+        ]
+      }
+    },
+    "aequator-night-circle": {
+      "caption": {
+        "en": [
+          "Äquatormassband carries the performance from daylight into night.",
+          "The Äquatormaßband takes the performance from daylight into night."
+        ],
+        "bg": [
+          "Äquatormassband продължава представлението от деня към нощта.",
+          "Представлението на Екваторната лента продължава от деня към нощта."
+        ]
+      },
+      "alt text": {
+        "en": [
+          "Performers move around a taped circle in a park as daylight fades",
+          "Performers move around a circle marked out with ribbon in a park as dusk falls."
+        ],
+        "bg": [
+          "Артисти се движат около очертан с лента кръг в парк при смрачаване",
+          "Артисти се движат около кръг, очертан с лента в парк, докато се смрачава."
+        ]
+      }
+    },
+    "aequator-skirt-dance": {
+      "caption": {
+        "en": [
+          "A turning costume moment from the outdoor Äquatormassband performance.",
+          "A swirl of costume from an outdoor Äquatormaßband performance."
+        ],
+        "bg": [
+          "Момент с въртящ се костюм от представлението на Äquatormassband на открито.",
+          "Завихрена пола по време на представление на Екваторната лента на открито."
+        ]
+      },
+      "alt text": {
+        "en": [
+          "Titania Chaos spins a broad green patterned skirt inside a taped performance circle",
+          "Titania Chaos twirls a wide green patterned skirt inside a performance circle marked out with ribbon."
+        ],
+        "bg": [
+          "Титания Хаос завърта широка зелена шарена пола в очертан с лента сценичен кръг",
+          "Титания Хаос завърта широка зелена пола с шарки в сценичен кръг, очертан с лента."
+        ]
+      }
+    },
+    "aequator-audience-crossing": {
+      "caption": {
+        "en": [
+          "The boundary becomes part of the encounter in Äquatormassband.",
+          "In the Äquatormaßband, the boundary becomes part of the encounter."
+        ],
+        "bg": [
+          "Границата става част от срещата в Äquatormassband.",
+          "В Екваторната лента границата става част от срещата."
+        ]
+      },
+      "alt text": {
+        "en": [
+          "Titania Chaos guides people across a taped performance line in a park",
+          "Titania Chaos guides people across a line marked out with ribbon in a park."
+        ],
+        "bg": [
+          "Титания Хаос превежда хора през сценична линия от лента в парк",
+          "Титания Хаос превежда хора през линия, очертана с лента в парк."
+        ]
+      }
+    },
+    "aequator-circle-performance": {
+      "caption": {
+        "en": [
+          "The marked circle turns a park path into a stage for Äquatormassband.",
+          "A circle marked out with ribbon turns a park path into a stage for the Äquatormaßband."
+        ],
+        "bg": [
+          "Очертаният кръг превръща алеята в сцена за Äquatormassband.",
+          "Кръгът, очертан с лента, превръща паркова алея в сцена за Екваторната лента."
+        ]
+      },
+      "alt text": {
+        "en": [
+          "Titania Chaos and another performer play beside props inside a taped circle",
+          "Titania Chaos and another performer play beside props inside a circle marked out with ribbon."
+        ],
+        "bg": [
+          "Титания Хаос и друг артист играят до реквизит в очертан с лента кръг",
+          "Титания Хаос и още един участник играят до реквизит в кръг, очертан с лента."
+        ]
+      }
+    },
+    "aequator-white-costume": {
+      "caption": {
+        "en": [
+          "A brief prop transition during the outdoor Äquatormassband performance.",
+          "A brief change of props during an outdoor Äquatormaßband performance."
+        ],
+        "bg": [
+          "Кратък преход с реквизит по време на представлението на Äquatormassband на открито.",
+          "Кратка смяна на реквизита по време на представление на Екваторната лента на открито."
+        ]
+      },
+      "alt text": {
+        "en": [
+          "A performer in a white and blue costume gathers a long red fabric prop in a park",
+          "A performer in a white and blue costume gathers up a long piece of red fabric used as a prop in a park."
+        ],
+        "bg": [
+          "Артист в бяло-син костюм събира дълъг червен платнен реквизит в парк",
+          "Участник в бяло-син костюм събира дълъг червен плат, използван като реквизит в парк."
+        ]
+      }
+    }
+  }
+}

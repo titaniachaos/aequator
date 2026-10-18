@@ -113,11 +113,10 @@
       "stableId": "youtube-tuerkenschanzpark-2025", "type": "youtube",
       "sourceUrl": "https://www.youtube.com/watch?v=VyW32ZKq5kk",
       "title": { "en": "Türkenschanzpark, October 2025", "de": "Türkenschanzpark, Oktober 2025", "bg": "Тюркеншанцпарк, октомври 2025" },
-      "date": "2025-10", "place": { "en": "Türkenschanzpark, Vienna", "de": "Türkenschanzpark, Wien", "bg": "Тюркеншанцпарк, Виена" },
+      "date": "2025-10-15", "place": { "en": "Türkenschanzpark, Vienna", "de": "Türkenschanzpark, Wien", "bg": "Тюркеншанцпарк, Виена" },
       "creator": "Krasimir Stoichkov", "consentStatus": "approved",
       "altText": { "en": "Video of the Äquatormaßband and Titania Chaos in Türkenschanzpark, Vienna", "de": "Video von Äquatormassband und Titania Chaos im Türkenschanzpark, Wien", "bg": "Видео с Екваторната лента и Титания Хаос в Тюркеншанцпарк, Виена" },
-      "caption": { "en": "The Äquatormaßband and Titania Chaos in Türkenschanzpark, Vienna, October 2025.", "de": "Äquatormassband und Titania Chaos im Türkenschanzpark, Wien, Oktober 2025.", "bg": "Екваторната лента и Титания Хаос в Тюркеншанцпарк, Виена, октомври 2025 г." },
-      "eventId": "action-2025-10-tuerkenschanzpark"
+      "caption": { "en": "The Äquatormaßband and Titania Chaos in Türkenschanzpark, Vienna, October 2025.", "de": "Äquatormassband und Titania Chaos im Türkenschanzpark, Wien, Oktober 2025.", "bg": "Екваторната лента и Титания Хаос в Тюркеншанцпарк, Виена, октомври 2025 г." }
     },
     {
       "stableId": "youtube-platz-menschenrechte-2025", "type": "youtube",
@@ -132,7 +131,7 @@
   ],
   "tbd": [
     "banana-encore has no per-frame creator: the main site records photographers as one rights line for the whole archive, not per image. copyrightHolder is taken from that line.",
-    "The other two recorded actions have no media paired to them.",
+    "The other three recorded actions have no media paired to them.",
     "The six newly approved Äquatormassband films are not yet paired to action records because their dates and places are not verified."
   ],
   "rights": "© Tatiana Petkova (Titania Chaos). Photographs by Veliko Balabanov, Marine Hink, Heidi Holtl, Geo Kalev, Tanya Matskevich, Konstantin Oberlik, Tatiana Petkova, Marion Scholz and Laurent Ziegler. Recorded verbatim from https://titaniachaos.com/media.json"

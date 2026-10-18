@@ -179,7 +179,7 @@ Beide verbindet die Überzeugung, dass Frieden auch im Kleinen beginnt: mit der 
   <p id="aequator-support-title" class="aequator-support__title">Kontakt & Unterstützung</p>
   <p>Fragen zum Projekt oder Interesse an einer Zusammenarbeit?</p>
   <div class="aequator-support__links">
-    <a href="https://titaniachaos.com/de/#kontakt">Titania kontaktieren</a>
+    <a href="https://titaniachaos.com/de/#home-contact-title">Titania kontaktieren</a>
     <a href="https://revolut.me/titaniachaos" class="aequator-external">Über Revolut unterstützen ↗</a>
   </div>
 </aside>

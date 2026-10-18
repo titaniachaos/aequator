@@ -114,7 +114,9 @@ Facts borrowed from the main site — the rights notice, each frame's caption, a
 URLs, and the card image's real dimensions — are not ours to declare, so
 `npm run check:origin` asks titaniachaos.com instead. It needs the network and is
 deliberately outside `npm run check`, because the deploy gate must pass on a fresh clone
-with none.
+with none. Approved EN/BG caption and alt-text translations are recorded with their
+source wording in `scripts/approved-media-translations.json`; the check accepts only
+those exact source/translation pairs. Other text changes, rights and URL changes still fail.
 
 ## Open questions
 
@@ -122,8 +124,10 @@ Recorded in the `tbd` arrays of the data files and on the pages themselves:
 
 - The exact day is not verified for three actions: Platz der Menschenrechte (September 2025),
   Vienna (November 2025) and the "Sucht & Menschsein" festival (March 2026).
-- Two of the five recorded actions still have no media of their own. The September and October 2025
-  action films are linked from the project's public YouTube channel.
+- Three of the five recorded actions still have no media of their own. The September 2025
+  action film is linked from the project's public YouTube channel. The Türkenschanzpark
+  film records the separate 15 October 2025 visit, not the recorded 30 October visit;
+  both dates remain intact (project owner confirmed two visits).
 - `action-2025-11-wien` has no recorded venue within Vienna. Its title and summary restate
   the published caption and alt text of `banana-encore` and claim nothing beyond them.
 - Photographers are credited as one notice for the whole archive, not per frame, so there is
