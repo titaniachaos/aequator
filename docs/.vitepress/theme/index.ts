@@ -5,7 +5,6 @@ import ActionCard from './components/ActionCard.vue'
 import MediaFigure from './components/MediaFigure.vue'
 import MediaRights from './components/MediaRights.vue'
 import RoleBlock from './components/RoleBlock.vue'
-import DraftTranslation from './DraftTranslation.vue'
 import './custom.css'
 import { installSiteNavigation } from './site-navigation.mjs'
 
@@ -23,6 +22,5 @@ export default {
     app.component('RoleBlock', RoleBlock)
     // The rights notice, read from media.json. See MediaRights.vue.
     app.component('MediaRights', MediaRights)
-    app.component('DraftTranslation', DraftTranslation)
   }
 } satisfies Theme
