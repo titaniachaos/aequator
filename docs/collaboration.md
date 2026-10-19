@@ -5,8 +5,6 @@ description: How Bianca Trappl and Titania Chaos work together in the Äquatorma
 
 # Collaboration
 
-<DraftTranslation lang="en" />
-
 Titania Chaos has accompanied the Äquatormaßband since 2025 as ambassador and
 performative collaboration partner.
 
