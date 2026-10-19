@@ -27,8 +27,8 @@ npm run docs:preview    # serve the built site
 
 ```
 docs/
-├── index.md, collaboration.md, actions.md,     English — canonical root locale
-│   learning.md, journal.md, credits.md
+├── index.md, collaboration.md, actions.md, credits.md
+│                                                English — canonical root locale
 ├── de/                                          German — the authentic source language
 ├── bg/                                          Bulgarian
 ├── data/          project.json, actions.json, media.json, sources.json
@@ -46,8 +46,8 @@ docs/
 ## Source authority
 
 German is the authentic primary source for the project description and the action
-summaries. English and Bulgarian are machine-generated drafts and say so on the page
-(`DraftTranslation`) until they have been reviewed.
+summaries. The English and Bulgarian translations have been editorially reviewed and
+approved.
 
 Nothing on these pages is inferred, embellished or freely translated. Where verified
 material does not exist, the page says **TBD** rather than filling the gap.
@@ -134,7 +134,6 @@ Recorded in the `tbd` arrays of the data files and on the pages themselves:
   no per-image attribution.
 - No public verified source URLs exist yet for the project or any action.
 - The project's own start year and its current measured length are not recorded.
-- Learning and Journal are routed and translated but have no verified content.
 
 ## Navigation between project sites
 
