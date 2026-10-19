@@ -29,8 +29,6 @@ const PAGES: Page[] = [
   { slug: '', labels: ['Home', 'Start', 'Начало'] },
   { slug: 'collaboration', labels: ['Collaboration', 'Zusammenarbeit', 'Сътрудничество'] },
   { slug: 'actions', labels: ['Actions', 'Aktionen', 'Акции'] },
-  { slug: 'learning', labels: ['Learning', 'Lernen', 'Обучение'] },
-  { slug: 'journal', labels: ['Journal', 'Journal', 'Дневник'] },
   { slug: 'credits', labels: ['Credits', 'Mitwirkende', 'Екип'] }
 ]
 
