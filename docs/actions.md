@@ -9,8 +9,6 @@ import { data } from './.vitepress/actions.data.ts'
 
 # Actions
 
-<DraftTranslation lang="en" />
-
 Only actions with a verified date and verified affiliation to the Äquatormaßband are
 listed.
 
