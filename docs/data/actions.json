@@ -1,9 +1,9 @@
 {
-  "$schemaNote": "German summaries are verbatim from the authoritative project source (Blueprint V5.0 §6). English and Bulgarian strings are machine-generated drafts pending review.",
+  "$schemaNote": "German summaries are verbatim from the authoritative project source (Blueprint V5.0 §6). English and Bulgarian translations are editorially approved.",
   "translationReview": {
     "de": "verified",
-    "en": "draft",
-    "bg": "draft"
+    "en": "verified",
+    "bg": "verified"
   },
   "actions": [
     {
