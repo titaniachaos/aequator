@@ -21,9 +21,8 @@ Auf dieser Website wird ausschließlich Medienmaterial gezeigt, dessen Einwillig
 `approved` erfasst ist. Material mit dem Status `pending` oder `internal-only` erscheint
 weder auf den Seiten noch im Suchindex, in Metadaten oder unter den öffentlichen Dateien.
 
-Erfasst sind derzeit zwölf freigegebene Beiträge, hier und im [Journal](./journal) zu sehen. Sieben
-Dateien liegen auf der Hauptseite; fünf Filme sind von YouTube verlinkt und werden erst geladen,
-wenn Besucher:innen sie abspielen.
+Erfasst sind derzeit zwölf freigegebene Beiträge. Sieben Dateien liegen auf der Hauptseite; fünf Filme
+sind von YouTube verlinkt und werden erst geladen, wenn Besucher:innen sie abspielen.
 
 Rechtevermerk der Hauptseite:
 
