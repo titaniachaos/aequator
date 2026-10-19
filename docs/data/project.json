@@ -1,6 +1,10 @@
 {
-  "$schemaNote": "German is the authentic primary source (Blueprint V5.0 §6). English and Bulgarian strings are machine-generated drafts and remain draft until reviewed.",
-  "translationReview": { "de": "verified", "en": "draft", "bg": "draft" },
+  "$schemaNote": "German is the authentic primary source (Blueprint V5.0 §6). English and Bulgarian translations are editorially approved.",
+  "translationReview": {
+    "de": "verified",
+    "en": "verified",
+    "bg": "verified"
+  },
   "project": {
     "title": {
       "de": "Äquatormaßband × Titania Chaos",
