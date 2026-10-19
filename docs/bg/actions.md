@@ -9,8 +9,6 @@ import { data } from '../.vitepress/actions.data.ts'
 
 # Акции
 
-<DraftTranslation lang="bg" />
-
 Изброени са само акции с проверена дата и проверена принадлежност към Äquatormaßband.
 
 <ActionCard v-for="action in data.actions" :key="action.stableId" :action="action" lang="bg" />

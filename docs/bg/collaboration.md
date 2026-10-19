@@ -5,8 +5,6 @@ description: Как Бианка Трапл и Titania Chaos работят за
 
 # Сътрудничество
 
-<DraftTranslation lang="bg" />
-
 Titania Chaos съпровожда Äquatormaßband от 2025 г. като посланик и перформативен
 партньор в сътрудничеството.
 
