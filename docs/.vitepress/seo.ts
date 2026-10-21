@@ -153,16 +153,22 @@ export function buildHead(ctx: TransformContext, siteConfig: SiteConfig): HeadCo
   const title = ctx.pageData.title || ctx.title
   const description = ctx.description || ctx.siteData.description
   const projectHome = ['index.md', 'de/index.md', 'bg/index.md'].includes(ctx.page)
-  const image = projectHome
+  const socialImage = ctx.pageData.frontmatter.socialImage as
+    { url: string; width: number; height: number; alt: string } | undefined
+  if (socialImage && (!(socialImage.url?.startsWith('https://') || /^\/(?!\/)/.test(socialImage.url ?? '')) ||
+    !(socialImage.width > 0) || !(socialImage.height > 0) || !socialImage.alt?.trim())) {
+    throw new Error(`Invalid socialImage on ${ctx.page}: provide an HTTPS or host-relative URL, real dimensions and alt text.`)
+  }
+  const image = socialImage ? (socialImage.url.startsWith('/') ? `${HOSTNAME}${socialImage.url}` : socialImage.url.replace(WRITTEN_HOST, HOSTNAME)) : projectHome
     ? `${HOSTNAME}${BASE}images/aequator-titania-chaos-tuerkenschanzpark-2025-10-30.webp`
     : OG_IMAGE
-  const imageSize = projectHome ? { w: 720, h: 991 } : OG_IMAGE_SIZE
+  const imageSize = socialImage ? { w: socialImage.width, h: socialImage.height } : projectHome ? { w: 720, h: 991 } : OG_IMAGE_SIZE
   const homeImageAlt = {
     en: 'Titania Chaos, wearing a red clown nose and a brown coat, stands beside a woman holding a yellow flag; the fabric ribbon forms a circle around them.',
     de: 'Titania Chaos mit roter Clownnase und braunem Mantel neben einer Frau mit gelber Fahne; das Stoffband liegt im Kreis um beide.',
     bg: 'Титания Хаос с червен клоунски нос и кафяво палто до жена с жълто знаме; платнената лента образува кръг около двете.'
   }
-  const imageAlt = projectHome ? homeImageAlt[locale.lang] : OG_IMAGE_SIZE.alt
+  const imageAlt = socialImage ? socialImage.alt : projectHome ? homeImageAlt[locale.lang] : OG_IMAGE_SIZE.alt
 
   const head: HeadConfig[] = [
     ['link', { rel: 'canonical', href: canonical }],

@@ -1,6 +1,11 @@
 ---
 title: Schulchronik 2026/27
 description: Stoffe, Geschichten und Begegnungen – das Äquatormaßband an der Berufsschule für Handel und Reisen in Wien.
+socialImage:
+  url: /images/media/aequator-schule-naehen-herz-social.jpg
+  width: 1200
+  height: 800
+  alt: Hände nähen blauen Stoff mit einem herzförmigen Ausschnitt auf hellen Stoff.
 pageClass: schulchronik
 sidebar: false
 aside: false
