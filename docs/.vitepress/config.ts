@@ -1,4 +1,5 @@
 import { defineConfig, type DefaultTheme } from 'vitepress'
+import { schoolChronicleLocaleLink } from './theme/school-chronicle-navigation.mjs'
 import {
   BASE,
   HOSTNAME,
@@ -66,6 +67,8 @@ export default defineConfig({
   // Stated rather than left to the default, so nobody reaches for it to make a
   // red build green: an unresolved internal link fails the build.
   ignoreDeadLinks: false,
+
+  themeConfig: { i18nRouting: schoolChronicleLocaleLink },
 
   markdown: {
     // The main site shares this host, so a link to it is a same-site

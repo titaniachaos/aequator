@@ -27,7 +27,11 @@ const item = computed(() => data.byId[props.id])
 /** Public assets live under docs/public; withBase() carries the /aequator/ base. */
 const src = computed(() => {
   const file = item.value?.originalFile
-  if (!file) return item.value?.sourceUrl ?? ''
+  if (!file) {
+    const url = item.value?.sourceUrl ?? ''
+    const previewOrigin = import.meta.env.DEV && import.meta.env.VITE_MEDIA_ORIGIN
+    return previewOrigin ? url.replace('https://titaniachaos.com', previewOrigin) : url
+  }
   return withBase(file.startsWith('/') ? file : `/${file}`)
 })
 

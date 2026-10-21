@@ -11,6 +11,9 @@ next: false
 announcements:
   - title: Ein Schuljahr mit dem Äquatormaßband
     date: Schuljahr 2026/27
+    link:
+      text: Zur Schulchronik
+      url: /de/schulchronik
     teaser:
       - "Im Schuljahr 2026/27 ist das Äquatormaßband zu Gast an der "
       - text: Berufsschule für Handel und Reisen

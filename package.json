@@ -16,7 +16,7 @@
     "check": "npm run check:navigation && npm run validate:data && npm run check:claims && npm run typecheck && npm run docs:build",
     "check:claims": "node scripts/check-claims.mjs",
     "check:origin": "node scripts/check-origin.mjs",
-    "check:navigation": "node --test scripts/lib/site-navigation.test.mjs"
+    "check:navigation": "node --test scripts/lib/site-navigation.test.mjs scripts/lib/school-chronicle-navigation.test.mjs"
   },
   "keywords": [],
   "author": "",

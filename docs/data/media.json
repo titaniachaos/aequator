@@ -127,6 +127,50 @@
       "altText": { "en": "Video from Platz der Menschenrechte, Vienna, September 2025", "de": "Video vom Platz der Menschenrechte, Wien, September 2025", "bg": "Видео от площад „Права на човека“, Виена, септември 2025 г." },
       "caption": { "en": "A presentation at Platz der Menschenrechte, Vienna, September 2025.", "de": "Präsentation am Platz der Menschenrechte, Wien, September 2025.", "bg": "Представяне на площад „Права на човека“, Виена, септември 2025 г." },
       "eventId": "action-2025-09-platz-menschenrechte"
+    },
+    {
+      "stableId": "aequator-schule-2026-10-21-klassenzimmer",
+      "type": "image",
+      "sourceUrl": "https://titaniachaos.com/images/media/aequator-schule-2026-10-21-klassenzimmer.webp",
+      "title": {
+        "de": "Das Band im Klassenzimmer"
+      },
+      "date": "2026-10-21",
+      "creator": "Tatiana Petkova",
+      "consentStatus": "approved",
+      "altText": {
+        "de": "Schülerinnen und Schüler sitzen an Tischen; das bunte Stoffband verläuft durch den Mittelgang bis zur Tafel.",
+        "en": "Students sit at desks; the colourful fabric ribbon runs along the aisle towards the blackboard.",
+        "bg": "Ученици седят на чиновете; цветната платнена лента минава по пътеката към дъската."
+      },
+      "caption": {
+        "de": "Das Äquatormaßband an der Berufsschule für Handel und Reisen, 21. Oktober 2026.",
+        "en": "The equator ribbon at the Berufsschule für Handel und Reisen, 21 October 2026.",
+        "bg": "Екваторната лента в Berufsschule für Handel und Reisen, 21 октомври 2026 г."
+      },
+      "aspectRatio": "4/3"
+    },
+    {
+      "stableId": "aequator-schule-2026-10-21-fingerknuepfen",
+      "type": "image",
+      "sourceUrl": "https://titaniachaos.com/images/media/aequator-schule-2026-10-21-fingerknuepfen.webp",
+      "title": {
+        "de": "Mit den Fingern knüpfen"
+      },
+      "date": "2026-10-21",
+      "creator": "Tatiana Petkova",
+      "consentStatus": "approved",
+      "altText": {
+        "de": "Mehrere Hände knüpfen violette Wollfäden an einem Tisch.",
+        "en": "Several hands knot purple wool threads at a table.",
+        "bg": "Няколко ръце връзват възли с лилави вълнени конци на маса."
+      },
+      "caption": {
+        "de": "Knüpfen mit den Fingern beim Schulbesuch am 21. Oktober 2026.",
+        "en": "Knotting with fingers during the school visit on 21 October 2026.",
+        "bg": "Връзване на възли с пръсти при посещението в училището на 21 октомври 2026 г."
+      },
+      "aspectRatio": "3/4"
     }
   ],
   "tbd": [

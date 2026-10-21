@@ -234,8 +234,11 @@ body {
 .aequator-phase-one .aequator-reading > p { margin: 1.25rem 0; }
 .aequator-phase-one .aequator-current {
   margin: 3rem 0 0;
-  padding: 1.5rem 0;
-  border-block: 1px solid var(--vp-c-divider);
+  padding: 1.5rem clamp(1rem, 3vw, 1.75rem);
+  background: var(--vp-c-brand-soft);
+  border: 1px solid var(--vp-c-divider);
+  border-inline-start: 4px solid var(--vp-c-brand-1);
+  border-radius: 0 12px 12px 0;
 }
 .aequator-phase-one .aequator-current h2 {
   margin: 0 0 1.25rem;
@@ -378,3 +381,24 @@ body {
   .aequator-translated .VPNavBarHamburger { display: flex; }
   .aequator-translated .VPNavScreen { display: block; }
 }
+
+/* School chronicle: the same reading measure as the project homepage. */
+.schulchronik .content-container { max-width: 70ch !important; }
+.schulchronik .chronicle-kicker {
+  color: var(--vp-c-brand-1);
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+.schulchronik .chronicle-intro { font-size: 1.125rem; line-height: 1.7; }
+.schulchronik .chronicle-index {
+  margin: 2rem 0;
+  padding: 1rem 1.25rem;
+  background: var(--vp-c-bg-soft);
+  border-radius: 8px;
+}
+.schulchronik .chronicle-index p { margin: 0 0 0.5rem; font-weight: 600; }
+.schulchronik .chronicle-index ul { margin: 0; }
+.schulchronik .chronicle-entry h2 { margin-top: 3rem; }
+.schulchronik .chronicle-byline { color: var(--vp-c-text-2); font-size: 0.875rem; }
+.schulchronik .chronicle-back { margin-top: 3rem; }
