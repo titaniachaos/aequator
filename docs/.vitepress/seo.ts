@@ -261,10 +261,11 @@ export function buildHead(ctx: TransformContext, siteConfig: SiteConfig): HeadCo
  * config cannot express -- it is a map. So these are appended to the built HTML
  * instead.
  */
-export function localeAlternateTags(page: string): string {
+export function localeAlternateTags(page: string, pages: string[]): string {
   if (page === '404.md') return ''
-  const { locale } = splitLocale(toUrlPath(page))
-  return LOCALES.filter((l) => l.ogLocale !== locale.ogLocale)
+  const { locale, slug } = splitLocale(toUrlPath(page))
+  return existingAlternates(slug, pages).map((alternate) => alternate.locale)
+    .filter((l) => l.ogLocale !== locale.ogLocale)
     .map((l) => `<meta property="og:locale:alternate" content="${l.ogLocale}">`)
     .join('')
 }

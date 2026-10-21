@@ -102,7 +102,7 @@ export default defineConfig({
   transformHead: (ctx) => buildHead(ctx, ctx.siteConfig),
 
   transformHtml: (code, _id, ctx) => {
-    const tags = localeAlternateTags(ctx.page)
+    const tags = localeAlternateTags(ctx.page, ctx.siteConfig.pages)
     return tags ? code.replace('</head>', `${tags}</head>`) : code
   },
 
