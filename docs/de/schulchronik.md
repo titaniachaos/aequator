@@ -40,19 +40,19 @@ Berichte
 
 <MediaFigure id="aequator-schule-2026-10-21-klassenzimmer" lang="de" :width="960" :height="720" />
 
-Ein Ball aus meinen Clownschals machte den Anfang. Wir warfen ihn einander zu und nannten erst den eigenen Namen, dann den Namen des Gegenübers. Danach kamen die Sprachen der Gruppe dazu: Serbisch, Kurdisch, Türkisch, Russisch und Ukrainisch, neben Deutsch. Wer wollte, konnte etwas in einer dieser Sprachen sagen.
+Ein Ball aus meinen Clownschals machte den Anfang. Wir warfen ihn einander zu, nannten unsere Namen und die unseres Gegenübers. Ein einfaches Spiel aus dem Social Circus, bei dem es ums Kennenlernen geht, aber auch darum, einander Aufmerksamkeit zu schenken. Dann kamen die Sprachen der Gruppe dazu: Serbisch, Bosnisch, Kroatisch, Kurdisch, Türkisch, Russisch und Ukrainisch. Mit dem Ball wanderte zum Schluss auch etwas in einer anderen Sprache durch die Klasse.
 
-Bianca erzählte über Stoffe und ihre Herstellung. Ich führte mich auf. Sie holte mich als „Chefin“ zurück. Dazwischen war Platz für Fragen. Wir vereinbarten: Wenn wir ein Wort nicht kennen, fragen wir nach. Zum Beispiel: Petrol.
+Mit den etwa zwölf Jugendlichen hatten wir uns bereits vor dem Sommer zweimal getroffen. Wir erinnerten uns gemeinsam daran, worum es beim Äquatormaßband geht. Dazu rollten wir Stoffbänder von den Kabelrollen ab und schauten uns an, was andere Menschen bereits beigetragen hatten: unterschiedliche Stoffe, Materialien und Geschichten. Ein Schüler nahm seine begonnene Näharbeit wieder auf. Eine Schülerin hatte Stoff mitgebracht und verlängerte das Band um 150 Zentimeter. Sie erzählte, dass sie sich auf unseren Besuch gefreut hatte, weil sie das Projekt unterstützen wollte.
 
-Etwa zwölf Jugendliche waren dabei. Wir kannten die Klasse schon von zwei Begegnungen mit dem Äquatormaßband. Ein Schüler nähte an seiner begonnenen Arbeit weiter. Eine Schülerin hatte Stoff mitgebracht und verlängerte das Band um 150 Zentimeter. Sie hatte sich auf unseren Besuch gefreut, weil sie das Projekt unterstützen wollte.
+Bianca und ich spielten mit unserer Rollenverteilung. Ich führte mich auf, sie holte mich als „Chefin“ wieder zurück. Dazwischen ging es um Stoffe, ihre Herstellung und um Wörter, die nicht alle kannten. Wir vereinbarten, bei unbekannten Wörtern nachzufragen. Auch was „Petrol“ bedeutet, musste erst einmal geklärt werden.
 
-Ein Grüppchen bekam von Bianca Wolle zum Knüpfen mit den Fingern. Bianca schrieb Namen auf und hielt Gesagtes für das nächste Treffen fest. Ich band allen einen weißen „Geduldsfaden“ um den Arm. Dabei entstanden schöne kleine Gespräche.
+Einige Jugendliche probierten aus, wie man mit den Fingern Wolle knüpft. Bianca notierte sich Namen und Geschichten, damit wir beim nächsten Mal daran anknüpfen können. Ich band allen einen weißen „Geduldsfaden“ um den Arm. Dabei kamen wir miteinander ins Gespräch.
 
 <MediaFigure id="aequator-schule-2026-10-21-fingerknuepfen" lang="de" :width="720" :height="960" />
 
-Auch in einer zweiten Klasse schauten wir vorbei: acht bis neun Jugendliche, etwa zehn Minuten Zeit, um vom Äquatormaßband zu erzählen.
+Unser zweistündiger Besuch endete mit einem spontanen Abstecher in eine weitere Klasse. Dort hatten wir etwa zehn Minuten Zeit, um acht bis neun Jugendlichen das Äquatormaßband vorzustellen.
 
-Beim nächsten Mal möchten wir einen Kreis bilden und gemeinsam im Raum sein. Stoffe mitbringen, Geschichten erzählen, einander besser kennenlernen. Wir laden dazu ein. Was die Jugendlichen selbst einbringen möchten, soll Platz haben.
+Beim nächsten Mal möchten wir mehr Raum für die eigenen Ideen der Jugendlichen schaffen. Welche Stoffe sie mitbringen, welche Geschichten sie erzählen und wie sie das Band mitgestalten werden, ist der spannendste Teil.
 
 </article>
 
