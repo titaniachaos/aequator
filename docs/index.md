@@ -11,6 +11,9 @@ next: false
 announcements:
   - title: A school year with the Äquatormaßband
     date: School year 2026/27
+    link:
+      text: Read the school chronicle
+      url: /schulchronik
     paragraphs: [["During the 2026/27 school year, the Äquatormaßband is taking part in a year-long project at Vienna’s ", {"text": "Berufsschule für Handel und Reisen", "url": "https://www.bshr.at/"}, ". Together with two classes, Bianca Trappl and Titania Chaos explore what fabrics and personal stories can tell us about ourselves. We collect, sew, play and get to know one another—with the aim of helping the ribbon grow and, at the end of the school year, symbolically encircling the school building with it."], ["A project about living together, our differences and what connects us."]]
 ---
 
@@ -23,6 +26,7 @@ interface Announcement {
   title: string
   date: string
   paragraphs: TextPart[][]
+  link?: { text: string; url: string }
 }
 const { frontmatter } = useData()
 // Edit announcements in this page's frontmatter; an empty list hides the block.
@@ -77,6 +81,7 @@ And little by little, separate pieces of fabric become something shared.
     <p class="aequator-current__date">{{ announcement.date }}</p>
     <h3>{{ announcement.title }}</h3>
     <p v-for="(paragraph, paragraphIndex) in announcement.paragraphs" :key="paragraphIndex"><template v-for="(part, index) in paragraph" :key="index"><template v-if="typeof part === 'string'">{{ part }}</template><a v-else :href="withBase(part.url)">{{ part.text }}</a></template></p>
+    <p v-if="announcement.link?.url && announcement.link?.text"><a :href="withBase(announcement.link.url)">{{ announcement.link.text }}</a></p>
   </article>
 </aside>
 
