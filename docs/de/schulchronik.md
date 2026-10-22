@@ -28,31 +28,33 @@ Schon am 10. und 17. Juni 2026 gab es erste Begegnungen mit einer Klasse – im 
 
 Berichte
 
-- [21. Oktober 2026 · Viele Sprachen und ein Geduldsfaden](#besuch-2026-10-21)
+- [21. Oktober 2026 · Äquatormaßband macht Schule](#besuch-2026-10-21)
 
 </nav>
 
 <article class="chronicle-entry" aria-labelledby="besuch-2026-10-21">
 
-## 21. Oktober 2026 · Viele Sprachen und ein Geduldsfaden {#besuch-2026-10-21}
+## 21. Oktober 2026 · Äquatormaßband macht Schule {#besuch-2026-10-21}
 
 <p class="chronicle-byline">Ein Bericht von Titania Chaos</p>
 
 <MediaFigure id="aequator-schule-2026-10-21-klassenzimmer" lang="de" :width="960" :height="720" />
 
-Ein Ball aus meinen Clownschals machte den Anfang. Wir warfen ihn einander zu, nannten unsere Namen und die unseres Gegenübers. Ein einfaches Spiel aus dem Social Circus, bei dem es ums Kennenlernen geht, aber auch darum, einander Aufmerksamkeit zu schenken. Dann kamen die Sprachen der Gruppe dazu: Serbisch, Bosnisch, Kroatisch, Kurdisch, Türkisch, Russisch und Ukrainisch. Mit dem Ball wanderte zum Schluss auch etwas in einer anderen Sprache durch die Klasse.
+Nach unseren beiden Treffen im Juni waren Bianca und ich wieder in der Berufsschule für Handel und Reisen in Wien. Wir arbeiten im Schuljahr 2026/27 mit derselben Klasse weiter. Die Jugendlichen bilden nun sozusagen den Kopf des Äquators in der Schule. Von hier aus soll sich das Projekt auch in andere Klassen ausbreiten.
 
-Mit den etwa zwölf Jugendlichen hatten wir uns bereits vor dem Sommer zweimal getroffen. Wir erinnerten uns gemeinsam daran, worum es beim Äquatormaßband geht. Dazu rollten wir Stoffbänder von den Kabelrollen ab und schauten uns an, was andere Menschen bereits beigetragen hatten: unterschiedliche Stoffe, Materialien und Geschichten. Ein Schüler nahm seine begonnene Näharbeit wieder auf. Eine Schülerin hatte Stoff mitgebracht und verlängerte das Band um 150 Zentimeter. Sie erzählte, dass sie sich auf unseren Besuch gefreut hatte, weil sie das Projekt unterstützen wollte.
+Angefangen haben wir mit einem Ball, den ich aus meinen Clownschals zusammengebunden hatte. Wir warfen ihn einander zu und nannten dabei unsere Namen und die unseres Gegenübers. Das Spiel kommt aus dem Social Circus: Man lernt sich kennen und muss gleichzeitig aufeinander achten. Danach wollten wir wissen, welche Sprachen außer Deutsch in der Klasse gesprochen werden. Da kam einiges zusammen: Serbisch, Bosnisch, Kroatisch, Kurdisch, Türkisch, Russisch und Ukrainisch. Schließlich durfte jeder auch etwas in einer anderen Sprache sagen.
 
-Bianca und ich spielten mit unserer Rollenverteilung. Ich führte mich auf, sie holte mich als „Chefin“ wieder zurück. Dazwischen ging es um Stoffe, ihre Herstellung und um Wörter, die nicht alle kannten. Wir vereinbarten, bei unbekannten Wörtern nachzufragen. Auch was „Petrol“ bedeutet, musste erst einmal geklärt werden.
+Wir rollten die Kabelrollen mit den bereits gesammelten Stoffen ab, schauten uns die verschiedenen Materialien an und sprachen darüber, woher sie kommen und wie sie hergestellt werden. Ein Schüler nähte an seiner begonnenen Arbeit weiter. Eine Schülerin hatte sogar ein Stück Stoff mitgebracht und erzählte uns seine Geschichte. Sie hatte sich auf unseren Besuch gefreut und wollte etwas zum Projekt beitragen. Damit wurde das Äquatormaßband gleich um 150 Zentimeter länger.
 
-Einige Jugendliche probierten aus, wie man mit den Fingern Wolle knüpft. Bianca notierte sich Namen und Geschichten, damit wir beim nächsten Mal daran anknüpfen können. Ich band allen einen weißen „Geduldsfaden“ um den Arm. Dabei kamen wir miteinander ins Gespräch.
+Zwischendurch wurde gespielt, gefragt und erklärt. Nicht jedes Wort war allen bekannt. Was zum Beispiel ist eigentlich „Petrol“? Wir vereinbarten, lieber nachzufragen, wenn man etwas nicht versteht.
+
+Bianca zeigte einigen Jugendlichen, wie man mit den Fingern Wolle knüpfen kann. Sie notierte sich auch Namen und einiges von dem, was erzählt wurde, damit wir beim nächsten Mal daran anknüpfen können. Ich band allen einen weißen „Geduldsfaden“ ums Handgelenk. Das gab mir Gelegenheit, mit den Einzelnen ein bisschen persönlicher ins Gespräch zu kommen.
 
 <MediaFigure id="aequator-schule-2026-10-21-fingerknuepfen" lang="de" :width="720" :height="960" />
 
-Unser zweistündiger Besuch endete mit einem spontanen Abstecher in eine weitere Klasse. Dort hatten wir etwa zehn Minuten Zeit, um acht bis neun Jugendlichen das Äquatormaßband vorzustellen.
+Nach zwei Stunden schauten wir noch spontan in einer anderen Klasse vorbei. Dort stellten wir in ungefähr zehn Minuten das Äquatormaßband vor.
 
-Beim nächsten Mal möchten wir mehr Raum für die eigenen Ideen der Jugendlichen schaffen. Welche Stoffe sie mitbringen, welche Geschichten sie erzählen und wie sie das Band mitgestalten werden, ist der spannendste Teil.
+Bei den nächsten Treffen möchten wir vor allem die Jugendlichen selbst mehr zu Wort kommen lassen. Wir sind neugierig, welche Stoffe und Geschichten sie mitbringen und was ihnen für unser gemeinsames Projekt einfällt.
 
 </article>
 
