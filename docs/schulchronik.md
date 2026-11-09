@@ -8,8 +8,6 @@ socialImage:
   alt: Hands sewing blue fabric with a heart-shaped cutout onto light-coloured cloth.
 pageClass: schulchronik
 sidebar: false
-aside: false
-outline: false
 prev: false
 next: false
 ---

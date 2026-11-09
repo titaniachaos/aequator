@@ -8,8 +8,6 @@ socialImage:
   alt: Hände nähen blauen Stoff mit einem herzförmigen Ausschnitt auf hellen Stoff.
 pageClass: schulchronik
 sidebar: false
-aside: false
-outline: false
 prev: false
 next: false
 ---

@@ -4,8 +4,7 @@ titleTemplate: false
 description: Ein Band aus Stoffen und Geschichten, das einmal um die Erde reichen soll.
 pageClass: aequator-phase-one
 sidebar: false
-aside: false
-outline: false
+outline: 2
 prev: false
 next: false
 announcements:

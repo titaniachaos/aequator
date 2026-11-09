@@ -4,8 +4,7 @@ titleTemplate: false
 description: Лента от парчета плат и лични истории, която един ден ще обиколи Земята.
 pageClass: aequator-phase-one aequator-translated
 sidebar: false
-aside: false
-outline: false
+outline: 2
 prev: false
 next: false
 announcements:

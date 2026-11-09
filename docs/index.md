@@ -4,8 +4,7 @@ titleTemplate: false
 description: A ribbon made of fabric scraps and stories that will one day stretch around the Earth.
 pageClass: aequator-phase-one aequator-translated
 sidebar: false
-aside: false
-outline: false
+outline: 2
 prev: false
 next: false
 announcements:

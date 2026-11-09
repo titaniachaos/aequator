@@ -1,3 +1,4 @@
+import { fileURLToPath } from 'node:url'
 import { defineConfig, type DefaultTheme } from 'vitepress'
 import { schoolChronicleLocaleLink } from './theme/school-chronicle-navigation.mjs'
 import {
@@ -70,6 +71,22 @@ export default defineConfig({
 
   themeConfig: { i18nRouting: schoolChronicleLocaleLink },
 
+  vite: {
+    plugins: [{
+      name: 'aequator-nav-title',
+      enforce: 'pre',
+      resolveId(source, importer) {
+
+        if (
+          source === './VPNavBarTitle.vue' &&
+          importer?.split('?')[0]?.endsWith('/vitepress/dist/client/theme-default/components/VPNavBar.vue')
+        ) {
+          return fileURLToPath(new URL('./theme/components/ProjectNavTitle.vue', import.meta.url))
+        }
+      }
+    }]
+  },
+
   markdown: {
     // The main site shares this host, so a link to it is a same-site
     // navigation: no new tab, no external-link arrow. Markdown is written with
@@ -123,6 +140,7 @@ export default defineConfig({
           { text: 'About us', link: '/#bianca-trappl-×-titania-chaos' },
           { text: 'Titania Chaos', link: MAIN_SITE(''), ...SAME_SITE }
         ],
+        projectBrand: { href: MAIN_SITE(''), name: 'Äquatormaßband' },
         sidebar: sidebar('', 'Äquatormaßband', 0),
         outline: { level: [2, 3], label: 'On this page' },
         docFooter: { prev: 'Previous page', next: 'Next page' },
@@ -154,6 +172,7 @@ export default defineConfig({
           { text: 'Über uns', link: '/de/#bianca-trappl-×-titania-chaos' },
           { text: 'Titania Chaos', link: MAIN_SITE('/de'), ...SAME_SITE }
         ],
+        projectBrand: { href: MAIN_SITE('/de'), name: 'Äquatormaßband' },
         sidebar: sidebar('/de', 'Äquatormaßband', 1),
         outline: { level: [2, 3], label: 'Auf dieser Seite' },
         docFooter: { prev: 'Vorherige Seite', next: 'Nächste Seite' },
@@ -193,6 +212,7 @@ export default defineConfig({
           { text: 'За нас', link: '/bg/#bianca-trappl-×-titania-chaos' },
           { text: 'Titania Chaos', link: MAIN_SITE('/bg'), ...SAME_SITE }
         ],
+        projectBrand: { href: MAIN_SITE('/bg'), name: 'Екваторната лента' },
         sidebar: sidebar('/bg', 'Äquatormaßband', 2),
         outline: { level: [2, 3], label: 'На тази страница' },
         docFooter: { prev: 'Предишна страница', next: 'Следваща страница' },

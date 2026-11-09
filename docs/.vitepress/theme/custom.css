@@ -175,11 +175,9 @@ body {
 /* The German project home inherits the existing brand and navigation. All
    editorial layout rules stay on this page, including the media overrides. */
 .Layout.aequator-phase-one .VPDoc:not(.has-sidebar) .container { max-width: 1120px; }
-.Layout.aequator-phase-one .VPDoc:not(.has-sidebar) .content { max-width: none; width: 100%; }
-.aequator-phase-one .VPDoc .content-container { max-width: none; }
-.aequator-phase-one .VPNavBarTitle .title { letter-spacing: -0.025em; }
+.Layout.aequator-phase-one .VPDoc:not(.has-sidebar) .content { max-width: none; min-width: 0; }
+.Layout.aequator-phase-one .VPDoc.has-aside .content-container { max-width: none; }
 .aequator-phase-one .VPNavBarMenuLink { font-weight: 600; }
-.aequator-phase-one .VPLocalNav { display: none; }
 .aequator-phase-one .VPDoc { padding-top: clamp(2.5rem, 6vw, 5rem); }
 .aequator-phase-one .aequator-project { font-size: 16px; line-height: 1.75; }
 .aequator-phase-one .aequator-project p { line-height: 1.75; text-wrap: pretty; }
@@ -329,14 +327,22 @@ body {
 .aequator-phase-one .vp-doc h2 .header-anchor { top: 0; }
 .aequator-phase-one .vp-doc h3 .header-anchor { top: 1.5rem; }
 
-/* Reuse the theme's mobile menu on tablets, with the same five anchors. */
+/* Keep long section titles readable in the outline. */
+:is(.aequator-phase-one, .schulchronik) :is(.VPDocAsideOutline, .VPLocalNav) .outline-link {
+  padding-block: 6px;
+  line-height: 1.45;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+/* Use the theme's mobile menu where the project navigation needs more room. */
 @media (max-width: 960px) {
-  .aequator-phase-one .VPNavBarMenu,
-  .aequator-phase-one .VPNavBarTranslations,
-  .aequator-phase-one .VPNavBarAppearance,
-  .aequator-phase-one .VPNavBarExtra { display: none; }
-  .aequator-phase-one .VPNavBarHamburger { display: flex; }
-  .aequator-phase-one .VPNavScreen { display: block; }
+  :is(.aequator-phase-one, .schulchronik) .VPNavBarMenu,
+  :is(.aequator-phase-one, .schulchronik) .VPNavBarTranslations,
+  :is(.aequator-phase-one, .schulchronik) .VPNavBarAppearance,
+  :is(.aequator-phase-one, .schulchronik) .VPNavBarExtra { display: none; }
+  :is(.aequator-phase-one, .schulchronik) .VPNavBarHamburger { display: flex; }
+  :is(.aequator-phase-one, .schulchronik) .VPNavScreen { display: block; }
 }
 
 @media (max-width: 960px) {
@@ -345,9 +351,15 @@ body {
   .aequator-phase-one .aequator-intro .aequator-lead { max-width: none; }
   .aequator-phase-one .VPDoc { padding-inline: 24px; }
 }
+@media (min-width: 1280px) {
+  .aequator-phase-one .VPDoc.has-aside .aequator-intro {
+    grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+    gap: 2rem;
+  }
+}
+
 @media (max-width: 380px) {
   .aequator-phase-one .VPDoc { padding-inline: 20px; }
-  .aequator-phase-one .VPNavBarTitle .title { font-size: 14px; }
   .aequator-phase-one .aequator-project h1 { font-size: 1.85rem; }
 }
 
