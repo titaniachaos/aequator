@@ -413,4 +413,10 @@ body {
 .schulchronik .chronicle-index ul { margin: 0; }
 .schulchronik .chronicle-entry h2 { margin-top: 3rem; }
 .schulchronik .chronicle-byline { color: var(--vp-c-text-2); font-size: 0.875rem; }
+.schulchronik .chronicle-gallery { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem; }
+.schulchronik .chronicle-gallery .media-figure { margin-block: 0.75rem; }
+.schulchronik .chronicle-entry video { display: block; max-height: 70vh; max-height: 70svh; width: auto; max-width: 100%; margin-inline: auto; }
+@media (max-width: 600px) {
+  .schulchronik .chronicle-gallery { grid-template-columns: 1fr; }
+}
 .schulchronik .chronicle-back { margin-top: 3rem; }

@@ -1,9 +1,10 @@
 <script setup lang="ts">
-import { computed, ref } from 'vue'
+import { computed, ref, onMounted, onBeforeUnmount } from 'vue'
 import { withBase } from 'vitepress'
 import type { Language } from '../../../types/index.ts'
 import { data } from '../../media.data.ts'
 import { t } from '../localized.ts'
+import { installVisibleVideo } from '../visible-video.mjs'
 
 /**
  * A figure for one media item, addressed by its stable id. media.data.ts has
@@ -17,20 +18,41 @@ const props = defineProps<{
   presentation?: 'poster'
   priority?: boolean
   playsinline?: boolean
+  autoplayVisible?: boolean
   width?: number
   height?: number
 }>()
 
 const lang = computed<Language>(() => props.lang ?? 'en')
 const item = computed(() => data.byId[props.id])
+const video = ref<HTMLVideoElement>()
+// Restore the poster after a clip finishes. Some embedded browsers discard the
+// last video frame and otherwise leave a blank surface with ended controls.
+const restoreVideoPoster = () => video.value?.load()
+let stopVideo: (() => void) | undefined
+onMounted(() => {
+  if (props.autoplayVisible && video.value && typeof IntersectionObserver !== 'undefined') {
+    stopVideo = installVisibleVideo(video.value, {
+      mediaQuery: window.matchMedia('(prefers-reduced-motion: reduce)'),
+      Observer: IntersectionObserver,
+      page: document
+    })
+  }
+})
+onBeforeUnmount(() => stopVideo?.())
+
+/** A development-only origin serves unpublished media from the clean archive. */
+const mediaUrl = (url = '') => {
+  const previewOrigin = import.meta.env.DEV && import.meta.env.VITE_MEDIA_ORIGIN
+  return previewOrigin ? url.replace('https://titaniachaos.com', previewOrigin) : url
+}
+const poster = computed(() => mediaUrl(item.value?.posterUrl))
 
 /** Public assets live under docs/public; withBase() carries the /aequator/ base. */
 const src = computed(() => {
   const file = item.value?.originalFile
   if (!file) {
-    const url = item.value?.sourceUrl ?? ''
-    const previewOrigin = import.meta.env.DEV && import.meta.env.VITE_MEDIA_ORIGIN
-    return previewOrigin ? url.replace('https://titaniachaos.com', previewOrigin) : url
+    return mediaUrl(item.value?.sourceUrl)
   }
   return withBase(file.startsWith('/') ? file : `/${file}`)
 })
@@ -56,7 +78,7 @@ const credit = computed(() => {
   <figure v-if="item" class="media-figure">
     <img
       v-if="item.type === 'image' || (presentation === 'poster' && item.posterUrl)"
-      :src="presentation === 'poster' ? item.posterUrl : src"
+      :src="presentation === 'poster' ? poster : src"
       :alt="alt"
       :style="item.aspectRatio ? { aspectRatio: item.aspectRatio } : undefined"
       :width="width"
@@ -67,10 +89,16 @@ const credit = computed(() => {
     />
     <video
       v-else-if="item.type === 'video_file'"
+      ref="video"
+      @ended="restoreVideoPoster"
       :src="src"
-      :poster="item.posterUrl"
-      :playsinline="playsinline || undefined"
-      :aria-label="playsinline ? alt : undefined"
+      :poster="poster"
+      :playsinline="playsinline || autoplayVisible || undefined"
+      :muted="autoplayVisible || undefined"
+      :aria-label="alt"
+      :width="width"
+      :height="height"
+      :style="item.aspectRatio ? { aspectRatio: item.aspectRatio } : undefined"
       controls
       preload="none"
     />

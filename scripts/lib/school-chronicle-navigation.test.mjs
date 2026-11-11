@@ -2,6 +2,14 @@ import test from 'node:test'
 import assert from 'node:assert/strict'
 import { schoolChronicleLocaleLink } from '../../docs/.vitepress/theme/school-chronicle-navigation.mjs'
 
+test('November report switches between both translations with query and visit anchor', () => {
+  const route = { data: { relativePath: 'de/schulchronik.md' }, query: '?x=1', hash: '#besuch-2026-11-11' }
+  assert.equal(schoolChronicleLocaleLink({}, route, 'root'), '/schulchronik?x=1#besuch-2026-11-11')
+  assert.equal(schoolChronicleLocaleLink({}, route, 'de'), '/de/schulchronik?x=1#besuch-2026-11-11')
+  assert.equal(schoolChronicleLocaleLink({}, { ...route, data: { relativePath: 'schulchronik.md' } }, 'de'), '/de/schulchronik?x=1#besuch-2026-11-11')
+  assert.equal(schoolChronicleLocaleLink({}, route, 'bg'), '/bg/')
+})
+
 test('German chronicle switches to English preserving query and visit anchor', () => {
   const route = { data: { relativePath: 'de/schulchronik.md' }, query: '?x=1', hash: '#besuch-2026-10-21' }
   assert.equal(schoolChronicleLocaleLink({}, route, 'root'), '/schulchronik?x=1#besuch-2026-10-21')
